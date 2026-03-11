@@ -646,3 +646,7 @@ Gebruik deze beslisregel:
 - WMS / WFS / API / CSW / endpoint
     - > Dataservice
 
+
+
+## Referenties
+- [Originele sharepoint file](https://vlaamseoverheid.sharepoint.com/:w:/r/sites/aiv/Infocat/_layouts/15/Doc.aspx?sourcedoc=%7B7324B7E7-2CA4-4032-B326-EB0772BA3603%7D&file=Metadata%20Vlaanderen%20%20-%20Minimale%20metadatering%20voor%20publicatie%20op%20Datavindplaats.docx&action=default&mobileredirect=true)

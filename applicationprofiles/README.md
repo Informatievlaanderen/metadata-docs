@@ -1,0 +1,1 @@
+In this folder, files are put that are generated using the OSLO toolchain (see `MarkdownGenerationService.ts`. These files can be regenerated in order to see whether updates happened. Whenever a change occurs, manually propagate it to the relevant documentation page.

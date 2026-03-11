@@ -315,9 +315,11 @@ custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
 ]
 
-[project.markdown_extensions.attr_list] # icons, grids
+[project.markdown_extensions.attr_list] # icons, grids, imagesj
 [project.markdown_extensions.pymdownx.emoji] # icons
 emoji_index = "zensical.extensions.emoji.twemoji" # (1)! # icons
 emoji_generator = "zensical.extensions.emoji.to_svg" # icons
 
-[project.markdown_extensions.md_in_html] # grids
+[project.markdown_extensions.md_in_html] # grids, images
+
+[project.markdown_extensions.pymdownx.blocks.caption] # images

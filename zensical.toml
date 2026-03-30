@@ -44,10 +44,40 @@ Copyright &copy; 2026 Digitaal Vlaanderen
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+nav = [
+    { "Home" = "index.md" },
+    { "Snel starten" = [
+        "snelstarten.md",
+        "metadata.md",
+        "metadatavlaanderen.md",
+    ] },
+    { "Handleiding" = [
+        { "Editoren" = [
+            "editoren.md",
+        ] },
+        { "Admins" = [
+            "admins.md",
+        ] },
+        { "Instructies" = [
+            "minimale.effort.voor.datavindplaats.md",
+        ] },
+        { "Applicatieprofielen" = [
+            "applicatieprofielen.md",
+            "applicatieprofielen/dcatapvl.md",
+        ] },
+    ] },
+    { "Architectuur" = [
+        { "Technische documentatie" = [
+
+        ] },
+    ] },
+    { "Community" = [
+        { "Draag bij" = "draagbij.md" },
+        { "Werking" = "werking.md" },
+        { "FAQ" = "faq.md" },
+        { "Glossary" = "glossary.md" },
+    ] },
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -214,7 +244,7 @@ features = [
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
@@ -312,12 +342,12 @@ toggle.name = "Switch to light mode"
 [project.markdown_extensions.pymdownx.details] # admonitions
 [project.markdown_extensions.pymdownx.superfences] # admonitions, mermaid
 custom_fences = [
-  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
 ]
 
 [project.markdown_extensions.attr_list] # icons, grids, imagesj
 [project.markdown_extensions.pymdownx.emoji] # icons
-emoji_index = "zensical.extensions.emoji.twemoji" # (1)! # icons
+emoji_index = "zensical.extensions.emoji.twemoji"    # (1)! # icons
 emoji_generator = "zensical.extensions.emoji.to_svg" # icons
 
 [project.markdown_extensions.md_in_html] # grids, images

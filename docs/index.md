@@ -2,16 +2,13 @@
 icon: lucide/rocket
 ---
 
-# Snel starten
+# Home
 
 Deze documentatiepagina's zijn momenteel in opbouw. Bestaande documentatie hoort hierin geïntegreerd te worden. Eens er een kritieke massa aan inhoud wordt verzameld kan het bestaan van deze pagina's publiek gemaakt worden.
 
-Voorbeeld grids:
 <div class="grid cards" markdown>
-- :fontawesome-brands-html5: __HTML__ for content and structure
-- :fontawesome-brands-js: __JavaScript__ for interactivity
-- :fontawesome-brands-css3: __CSS__ for text running out of boxes
-- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+- :lucide-rocket: [__Snel starten__](snelstarten)
+- :lucide-square-library: [__Applicatieprofielen__](applicatieprofielen)
 </div>
 
 

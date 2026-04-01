@@ -10,9 +10,11 @@ First, copy the image file into the assets folder (you can use a subfolder for m
 
 Render sections using hashtags `#`. These can be references using internal links to jump to the right section.
 
-Example: jump to [Figures](#figures).
+Examples: 
+- jump to [Figures](#figures).
+- jump to [Mermaid](#mermaid-section).
 
-# Mermaid
+# Mermaid {#mermaid-section}
 
 See lots of examples on [the live mermaid environment](https://mermaid.live). Below are some copied examples.
 
@@ -26,3 +28,7 @@ flowchart TD
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
 ```
+
+# References
+
+## 

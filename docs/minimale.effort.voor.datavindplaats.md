@@ -34,7 +34,18 @@ Voor geografische datasets is er een sjabloon voorzien dat de ISO-normen volgt. 
 
 **In de meeste gevallen zal de lezer van deze handleiding gebruik willen maken van de sjabloon voor Open Data, volgens DCAT-AP-VL 2.0 (Sectie 3).** Voorlopig is er ook nog een sjabloon specifiek voor Gesloten Data (= metadata-DCAT v.2.0), maar deze wordt in 2026 uitgefaseerd. 
 
-Wie meerdere gelijkaardige records wil aanmaken via de Editor kan ook een record dupliceren en als tijdelijk sjabloon gebruiken (Record beheren/ Dupliceer) (Figuur 2).
+![Record creatiescherm](assets/minimale.effort.voor.datavindplaats/maak.een.record.dataset.png){ align=left }
+/// figure-caption | #record-creation-screen
+Verscheidene sjablonen zijn beschikbaar bij het aanmaken van een record
+///
+
+Wie meerdere gelijkaardige records wil aanmaken via de Editor kan ook een record dupliceren en als tijdelijk sjabloon gebruiken.
+
+![Record duplicatiescherm](assets/minimale.effort.voor.datavindplaats/record.dupliceren.png){ align=left }
+/// figure-caption | #record-duplication-screen
+Een duplicaat maken van een bestaand record
+///
+
 
 ## Context en principes van metadata binnen Datavindplaats
 

@@ -50,6 +50,8 @@ nav = [
         "snelstarten.md",
         "metadata.md",
         "metadatavlaanderen.md",
+        { "FAQ" = "faq.md" },
+        { "Glossary" = "glossary.md" },
     ] },
     { "Handleiding" = [
         { "Editoren" = [
@@ -74,8 +76,7 @@ nav = [
     { "Community" = [
         { "Draag bij" = "draagbij.md" },
         { "Werking" = "werking.md" },
-        { "FAQ" = "faq.md" },
-        { "Glossary" = "glossary.md" },
+       
     ] },
 ]
 

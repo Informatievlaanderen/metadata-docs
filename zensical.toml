@@ -60,6 +60,7 @@ nav = [
         ] },
         { "Instructies" = [
             "minimale.effort.voor.datavindplaats.md",
+            "gdi.best.practice.md",
         ] },
         { "Applicatieprofielen" = [
             "applicatieprofielen/index.md",

@@ -79,7 +79,7 @@
 
 Dit is de richtlijn voor de uitwisseling van metadata, versie 2.0 van het GDI-Vlaanderen Best Practices-document voor Metadata, die vanaf 16 november 2020 in voege is.
 
-De richtlijn bevat een formele beschrijving van het GDI-Vlaanderen metadataprofiel. Het werd opgesteld aan de hand van verschillende ISO-standaarden (ISO 19115:2003 voor metadata van datasets - datasetseries en het technisch corrigendum 1 hiervan; ISO 19119:2005 voor metadata van services en het amendement 1 hierop; ISO 19139 voor de codering van metadata in XML) en de INSPIRE-richtlijn (INSPIRE Metadata Implementing Rules; Technical Guidelines 2.0). De richtlijn is geschreven voor de metadata-gebruikersgemeenschap en iedereen die de algemene principes voor het opstellen en uitwisselen van metadata wil kennen.
+De richtlijn bevat een formele beschrijving van het GDI-Vlaanderen metadataprofiel. Het werd opgesteld aan de hand van verschillende ISO-standaarden (`ISO 19115:2003` voor metadata van datasets - datasetseries en het technisch corrigendum 1 hiervan; `ISO 19119:2005` voor metadata van services en het amendement 1 hierop; `ISO 19139` voor de codering van metadata in XML) en de INSPIRE-richtlijn (INSPIRE Metadata Implementing Rules; Technical Guidelines 2.0). De richtlijn is geschreven voor de metadata-gebruikersgemeenschap en iedereen die de algemene principes voor het opstellen en uitwisselen van metadata wil kennen.
 
 Het GDI-Vlaanderen Best Practices document voor Metadata v2.0 bevat:
 
@@ -117,19 +117,19 @@ Het eerste onderdeel bevat een inleiding met algemene informatie over metadata e
 
 GIS-Vlaanderen heeft in 1996 - in afwachting van een ISO-norm - gekozen om metadata op te bouwen volgens een Europese (pre-)norm voor metadata (CEN prEN 27009). Het voormalige AGIV, thans opgegaan in Informatie Vlaanderen, heeft deze norm geïmplementeerd in SPIDI.
 
-Ondertussen is de ISO-norm voor metadata (ISO 19115:2003) gepubliceerd.  Deze ISO standaard wordt internationaal en binnen vrijwel alle Europese landen gebruikt en is ook door INSPIRE als de metadatastandaard aangewezen. INSPIRE is bindend binnen de Europese gemeenschap als implementatie omtrent geografische gegevens en dus ook de gerelateerde metadata.
+Ondertussen is de ISO-norm voor metadata (`ISO 19115:2003`) gepubliceerd.  Deze ISO standaard wordt internationaal en binnen vrijwel alle Europese landen gebruikt en is ook door INSPIRE als de metadatastandaard aangewezen. INSPIRE is bindend binnen de Europese gemeenschap als implementatie omtrent geografische gegevens en dus ook de gerelateerde metadata.
 
-Het voormalige Agentschap voor Geografische Informatie Vlaanderen (AGIV) moest zich daarom richten naar deze ISO norm. Om de bestaande metadata te recupereren is een omzetting gebeurd van CEN prEN 27009 naar ISO 19115:2003. De ISO-norm bestaat uit meer dan 400 in te vullen elementen voor datasets en datasetseries, waardoor het aangewezen is opnieuw te werken met een kernset (van verplicht in te vullen velden) en een optionele set voor metadata.
+Het voormalige Agentschap voor Geografische Informatie Vlaanderen (AGIV) moest zich daarom richten naar deze ISO norm. Om de bestaande metadata te recupereren is een omzetting gebeurd van CEN prEN 27009 naar `ISO 19115:2003`. De ISO-norm bestaat uit meer dan 400 in te vullen elementen voor datasets en datasetseries, waardoor het aangewezen is opnieuw te werken met een kernset (van verplicht in te vullen velden) en een optionele set voor metadata.
 
 Het allereerste document werd op 23 maart 2011 op de Stuurgroep GDI-Vlaanderen goedgekeurd, waardoor dit document "Vlaamse metadatastandaard voor geografie - GDI-Vlaanderen metadataprofiel" integraal een Aanbeveling GDI-Vlaanderen is geworden.
 
 Op basis van de ervaring sinds 1996 en rekening houdend met zowel de oude als de nieuwe implementatie werd een Best Practices-richtlijn opgesteld. Het reeds bestaande profiel, het "Technisch GDI-Vlaanderen voorschrift voor Metadata v3" van 7 juni 2011 en een mapping naar de nieuwe ISO-norm werden gebruikt om te komen tot de "Richtlijn voor de uitwisseling van metadata, versie 1.0 van het GDI-Vlaanderen Best Practices-document voor Metadata" van 18 november 2013 die voldeed aan de toenmalige eisen die gesteld werden door INSPIRE en je aangeeft hoe je best met elk van de elementen om gaat.
 
-Voor het samenstellen van de Best Practices werd ook beroep gedaan op de Nederlandse expertise inzake. Een sturende vergelijking werd gemaakt met de reeds bestaande Nederlandse metadatastandaard voor geografie 1.1. en zijn opvolgers (Geonovum). Deze is eveneens conform de ISO-norm (ISO 19115:2003 + Technical Corrigendum 1), ISO 19110 en ISO 19139.
+Voor het samenstellen van de Best Practices werd ook beroep gedaan op de Nederlandse expertise inzake. Een sturende vergelijking werd gemaakt met de reeds bestaande Nederlandse metadatastandaard voor geografie 1.1. en zijn opvolgers (Geonovum). Deze is eveneens conform de ISO-norm (`ISO 19115:2003` + Technical Corrigendum 1), `ISO 19110` en `ISO 19139`.
 
 Daarna is het reeds bestaande document verder aangevuld volgens de INSPIRE-richtlijn. INSPIRE Metadata vormt een hoofdstuk van de INSPIRE Directive 2007/2/EC, een kaderrichtlijn. De INSPIRE Implementing Rule for Metadata is een eerste IR door Europa vrijgegeven.
 
-Vervolgens werden de nodige aanpassingen aan de Best Practices-richtlijn gedaan zodat nu ook de metadata voor datasetseries en services zijn opgenomen. Deze services metadata-elementen zijn conform de ISO-norm (ISO 19119:2005 + Addendum 1) en ISO 19139. Alsook conform de INSPIRE Implementing Rule for Metadata, Technical Guidelines 1.3.
+Vervolgens werden de nodige aanpassingen aan de Best Practices-richtlijn gedaan zodat nu ook de metadata voor datasetseries en services zijn opgenomen. Deze services metadata-elementen zijn conform de ISO-norm (`ISO 19119:2005` + Addendum 1) en `ISO 19139`. Alsook conform de INSPIRE Implementing Rule for Metadata, Technical Guidelines 1.3.
 
 Versie 2.0 van deze richtlijn kent vooral verbeteringen ten gevolge van de modernisering van de nieuwe metadatacenters en de gewijzigde conformiteit voor de INSPIRE Implementing Rule for Metadata, Technical Guidelines 2.0.
 
@@ -232,33 +232,33 @@ ISO staat voor International Organization for Standardization. ISO is 's werelds
 
 Een ISO-norm staat nooit op zichzelf, de norm maakt deel uit van een groter geheel dat wordt gestuurd door "Technical committee 211" van ISO voor het domein van digitale geografische informatie ([www.isotc211.org](http://www.isotc211.org)).
 
-Naast een metadatanorm is er bijvoorbeeld ook een norm voor "Geographic Markup Language", "Positioning services" en "Web Map server interface".  Het metadatamodel is dan ook verweven met tal van andere ISO-normen (bijvoorbeeld ISO 19110, ISO 19139, ISO 19119), waarvan sommige normen zelfs nog in opbouw zijn.
+Naast een metadatanorm is er bijvoorbeeld ook een norm voor "Geographic Markup Language", "Positioning services" en "Web Map server interface".  Het metadatamodel is dan ook verweven met tal van andere ISO-normen (bijvoorbeeld `ISO 19110,` `ISO 19139`, `ISO 19119`), waarvan sommige normen zelfs nog in opbouw zijn.
 
 Een ISO-norm is te vergelijken met een grote 'bouwdoos', bestaande uit 'bouwstenen', 'bouwvoorschriften' en 'blauwdrukken', om profielen te bouwen. Elke gebruikersgemeenschap kan bijgevolg zijn eigen specifiek profiel ontwikkelen dat ISO-compatibel is.
 
 Het objectgeoriënteerde datamodel van de `ISO 19115` bijvoorbeeld (kortweg het meta-datamodel) bestaat uit een groot aantal bouwstenen of metadata-elementen. Met attributen en associaties, gebruikt door klassen, gebruikmakend van codelijsten en enumeraties ondersteunt het meta-datamodel, zo goed mogelijk, elk gebruik van metadata voor geografische gegevens (vb. remote sensing, webservice, data catalogus, ...). De architecten van een metadataprofiel kunnen dan in functie van de noden van hun gebruikersgroep een selectie van metadata-elementen maken. Er kan wel niet willekeurig gekozen worden. De structuur van het model moet gerespecteerd worden. Bovendien stellen de bouwvoorschriften dat de basis van elke standaard dezelfde dient te zijn om een minimale uitwisseling van metadata te garanderen. De uitbreiding van het datamodel is ook onderhevig aan bepaalde bouwvoorschriften. Naast een formele beschrijving van het meta-datamodel bevat de norm ook een aantal 'blauwdrukken' of implementatievoorschriften en\ -voorbeelden die verhelderend werken. De formele beschrijving gebeurt door middel van UML-schema's en een beschrijvend woordenboek, 'data dictionary' genoemd.
 
-##### ISO 19115 standaard - Geographic Information - Metadata 
+##### `ISO 19115` standaard - Geographic Information - Metadata 
 
 Deze ISO-norm werd als standaard gebruikt voor Metadata voor datasets en/of datasetseries.
 
-##### ISO 19115 - Technical Corrigendum 1 standaard - Geographic Information - Metadata 
+##### `ISO 19115` - Technical Corrigendum 1 standaard - Geographic Information - Metadata 
 
 Alsook het Technisch corrigendum op de `ISO 19115` standaard werd mee opgenomen.
 
-##### ISO 19115-2 standaard - Geographic Information - Metadata - Part 2: Extensions for imagery and gridded data
+##### `ISO 19115-2` standaard - Geographic Information - Metadata - Part 2: Extensions for imagery and gridded data
 
 Deze ISO-norm werd nog **niet** mee opgenomen in dit metadataprofiel. Voorlopig moet beeld- en rasterdata dus nog steeds via de eerste versie van de `ISO 19115` + Technical corrigendum 1 beschreven worden.
 
-##### ISO 19119 standaard - Geographic Information - Services 
+##### `ISO 19119` standaard - Geographic Information - Services 
 
 Deze ISO-norm werd als standaard gebruikt voor Metadata voor services.
 
-##### ISO 19119 standaard - Geographic Information - Services - Amendment 1: Extensions of the service metadata model
+##### `ISO 19119` standaard - Geographic Information - Services - Amendment 1: Extensions of the service metadata model
 
 Alsook dit Amendement op de `ISO 19119` standaard werd mee opgenomen.
 
-##### ISO 19110 - Geographic Information - Methodology for feature cataloguing
+##### `ISO 19110` - Geographic Information - Methodology for feature cataloguing
 
 Deze ISO-norm werd als standaard gebruikt voor de Beschrijving van objectencatalogi.
 
@@ -295,7 +295,7 @@ Metadata Vlaanderen brengt metadata van data samen afkomstig uit verschillende d
 Voor Geografische gegevens en services geldt de richtlijn voor de uitwisseling van metadata, versie 2.0 van het GDI-Vlaanderen Best Practices-document voor Metadata, die vanaf 16 november 2020 in voege
 is.
 
-De richtlijn bevat een formele beschrijving van het GDI-Vlaanderen metadataprofiel. Het werd opgesteld aan de hand van verschillende ISO-standaarden (ISO 19115:2003 voor metadata van datasets - datasetseries en het technisch corrigendum 1 hiervan; ISO 19119:2005 voor metadata van services en het amendement 1 hierop; ISO 19139 voor de codering van metadata in XML) en de INSPIRE-richtlijn (INSPIRE Metadata Implementing Rules; Technical Guidelines 2.0). De richtlijn is geschreven voor de metadata-gebruikersgemeenschap en iedereen die de algemene principes voor het opstellen en uitwisselen van metadata wil kennen.
+De richtlijn bevat een formele beschrijving van het GDI-Vlaanderen metadataprofiel. Het werd opgesteld aan de hand van verschillende ISO-standaarden (`ISO 19115:2003` voor metadata van datasets - datasetseries en het technisch corrigendum 1 hiervan; `ISO 19119:2005` voor metadata van services en het amendement 1 hierop; `ISO 19139` voor de codering van metadata in XML) en de INSPIRE-richtlijn (INSPIRE Metadata Implementing Rules; Technical Guidelines 2.0). De richtlijn is geschreven voor de metadata-gebruikersgemeenschap en iedereen die de algemene principes voor het opstellen en uitwisselen van metadata wil kennen.
 
 Voor Vlaamse (niet-geografische) Open data geldt de erkende standaard [DCAT-AP VL](applicatieprofielen/dcatapvl2), die vanaf 3 oktober 2019 in voege is als een vrijwillig toe te passen standaard.  Aan de hand van het applicatieprofiel "DCAT Application Profile for data portals in Europe", afgekort DCAT-AP, kan meta-informatie op een eenduidige wijze uitgewisseld worden tussen Open Data catalogi in Europa. DCAT-AP Vlaanderen (DCAT-AP VL) is een specialisatie (geen uitbreiding) van DCAT-AP. Met DCAT-AP VL kan een trapsgewijze aggregatie van de inhoud van Vlaamse Open Data Catalogi gerealiseerd worden zodat de informatie beschikbaar op lokaal of Vlaams niveau ook gevonden kan worden op het federale en Europese niveau. Het stuurorgaan voor het Vlaams Informatie- en ICT-beleid heeft op 3 oktober 2019 DCAT-AP VL erkend als een vrijwillig toe te passen standaard.
 
@@ -486,13 +486,13 @@ Een Catalogue Service is een systeem wat het "vinden" en "publiceren" van metada
 
 De metadata van datasets en datasetseries wordt uitgewisseld in de encoding (XML), conform:
 
--   <http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd> (ISO 19115 metadata-elementen)
--   <http://eden.ign.fr/xsd/isotc211/iso19110/20090316/gfc/gfc.xsd/>, tot het schema is opgenomen in <http://www.isotc211.org/2005/gfc> (ISO 19110-elementen)
+-   <http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd> (`ISO 19115` metadata-elementen)
+-   <http://eden.ign.fr/xsd/isotc211/iso19110/20090316/gfc/gfc.xsd/>, tot het schema is opgenomen in <http://www.isotc211.org/2005/gfc> (`ISO 19110`-elementen)
 
 Deze encoding is geschikt om tussen OGC catalogues (CSW) te kunnen uitwisselen. Voor de catalogues dient gebruik te worden gemaakt van de volgende schema's:
 
 -   *OGC Catalogue Service (2.0.2)*: Dit zijn de schema's die de interfaces en het core model van de basis Catalogue Service definiëren.
--   *ISO Application Metadata Profile (1.0.0)*: Dit schema is het basis schema van het ISO Application Profile voor de OGC Catalogue Service 2.0.2. Dit schema is verbonden met ISO 19139.
+-   *ISO Application Metadata Profile (1.0.0)*: Dit schema is het basis schema van het ISO Application Profile voor de OGC Catalogue Service 2.0.2. Dit schema is verbonden met `ISO 19139`.
 
 | Specificatie                     | Versie | Schema-locatie                                               |
 | -------------------------------- | ------ | ------------------------------------------------------------ |
@@ -507,11 +507,11 @@ De tegenhanger van een zoekdienst voor geografische gegevens is een (DCAT-)feed 
 
 Een DCAT-AP VL feed is een DCAT-AP VL catalogus-bestand dat ophaalbaar is via een URL. Dergelijke DCAT-AP VL feed moet aan een aantal technische voorwaarden voldoen, die beschreven staan in de Open data handleiding (op deze locatie: <https://overheid.vlaanderen.be/open-data-handleiding>).
 
-### Identificerende sleutels (identifiers) in ISO 19115
+### Identificerende sleutels (identifiers) in `ISO 19115`
 
 #### Metadatarecord identificatie
 
-In ISO 19115 wordt de identificatie van metadatarecords geregeld door de fileIdentifier, een tekenreeks opgenomen in het MD_Metadata object. Deze tekenreeks wordt vervangen door een MD_Identifier object in de herziening (januari 2014) van de ISO 19115 metadata standaard.
+In `ISO 19115` wordt de identificatie van metadatarecords geregeld door de fileIdentifier, een tekenreeks opgenomen in het MD_Metadata object. Deze tekenreeks wordt vervangen door een MD_Identifier object in de herziening (januari 2014) van de `ISO 19115` metadata standaard.
 
 Het gebruik van fileIdentifiers in de ISO metadata geeft metadatabeheerders een mechanisme om metadatarecords uniek te identificeren. Dit wordt steeds belangrijker naarmate metadata beheerd wordt in verschillende gedecentraliseerde metadatacatalogi die door een centrale catalogus (Metadata Vlaanderen catalogus) geoogst worden. Er is geen betrouwbare manier om dubbele records te identificeren zonder een unieke identificator.
 
@@ -523,23 +523,23 @@ Dit sluit niet uit dat wanneer de vraag naar meertaligheid in de toekomst opgele
 
 ### Verwante datasets vs. datasetseries vs. datasets
 
-#### Dataset - ISO 19115:2003 definitie 
+#### Dataset - `ISO 19115:2003` definitie 
 
-Identificeerbare collectie van data (ISO 34 2002)
+Identificeerbare collectie van data (`ISO 34 2002`)
 
 OPMERKING: Een dataset mag een kleinere groep van data zijn, gelimiteerd door beperkingen zoals een geografisch gebied of geo-objecttype ('feature type'), die aanwezig is in een grotere dataset. Theoretisch kan een dataset bestaan uit een enkel geo-object of een attribuut van een geo-object dat aanwezig is in een grotere dataset. Een papieren versie of kaart kan beschouwd worden als een dataset.
 
 De Vlaamse metadatastandaard voor geografie gaat niet uit van het type datasets zoals theoretisch beschreven kan worden.
 
-#### Datasetserie - ISO 19115:2003 definitie
+#### Datasetserie - `ISO 19115:2003` definitie
 
-Verzameling van datasets met dezelfde productspecificaties (ISO 47 2003)
+Verzameling van datasets met dezelfde productspecificaties (`ISO 47 2003`)
 
 Productspecificaties zijn volgens Nederland 'thema, resolutie en methodologie'. Toepassing van metadata op datasetseries maakt het gebruikers van de metadata mogelijk om op een hoger niveau dan individuele datasets data te zoeken. Metadata van datasetseries zijn geschikt voor het zoeken op globale karakteristieken van beschikbare data, maar niet voor diepgaand onderzoek naar de kwaliteit van specifieke datasets. Hiervoor is metadata van datasets noodzakelijk. De hiërarchische relatie tussen een dataset en datasetserie is altijd van verticale aard.
 
 #### Verwante datasets
 
-Volgens ISO 19115:2003 worden de horizontale relaties tussen datasets vastgelegd in de codelijst DS_AssociationTypeCode (B.5.7).
+Volgens `ISO 19115:2003` worden de horizontale relaties tussen datasets vastgelegd in de codelijst DS_AssociationTypeCode (B.5.7).
 
 Nederland neemt net zoals Vlaanderen enkel de 'crossReference' als type van relatie op, waarbij verwante datasets dus duiden op een referentie van de ene dataset naar een andere. (Van de verwante dataset(s) worden altijd de titel en datum ingevoerd.)
 
@@ -590,11 +590,11 @@ In de tool GeoNetwork kan je via het rechterpaneel een link toevoegen:
 
 En vervolgens kies je de correcte dataset(serie) uit de gepubliceerde metadatarecords die in de catalogus aanwezig zijn. Deze link wordt enkel in de catalogus gelegd, hierdoor wordt deze link niet weggeschreven in de XML van de metadatarecord zelf.
 
-## Best Practices - Uitleg per element: ISO 19115 (Datasets / Datasetseries)
+## Best Practices - Uitleg per element: `ISO 19115` (Datasets / Datasetseries)
 
 ### fileIdentifier (ISO element 2) 
 
-Dit element bevat de waarde die een metadatarecord uniek identificeert.  In de ISO 19115 (Geographic Information - Metadata) wordt deze identificerende sleutel (identifier) als tekenreeks gedefinieerd (/gmd:fileIdentifier/gco:CharacterString). Geadviseerd wordt om gebruik te maken van een betekenisloze identifier zoals een Universal Unique Identifier (UUID, <http://en.wikipedia.org/wiki/UUID>) of een Uniform Resource Identifier (URI, <http://nl.wikipedia.org/wiki/Uniform_Resource_Identifier>) om de uniciteit van de sleutel te garanderen.
+Dit element bevat de waarde die een metadatarecord uniek identificeert.  In de `ISO 19115` (Geographic Information - Metadata) wordt deze identificerende sleutel (identifier) als tekenreeks gedefinieerd (/gmd:fileIdentifier/gco:CharacterString). Geadviseerd wordt om gebruik te maken van een betekenisloze identifier zoals een Universal Unique Identifier (UUID, <http://en.wikipedia.org/wiki/UUID>) of een Uniform Resource Identifier (URI, <http://nl.wikipedia.org/wiki/Uniform_Resource_Identifier>) om de uniciteit van de sleutel te garanderen.
 
 Bijvoorbeeld: 17e50f84-5882-40d9-b0ed-7e062d9d26ac (UUID)
 
@@ -616,11 +616,11 @@ Zie 3.7 en 3.8 voor de uitleg datasets / datasetseries en zie ook 4.1 voor de ui
 
 ### hierarchyLevel (ISO element 6)
 
-Je kiest hier het niveau waarop de metadatarecord betrekking heeft; is het een dataset, datasetserie of service waar de metadata-beschrijving over zal gaan. Volgens ISO 19115 is een datasetserie een verzameling geografische data die gelijke karakteristieken hebben ten aanzien van het thema, de resolutie en/of methodologie. GDI-Vlaanderen gaat uit van het principe dat een datasetserie pas kan ontstaan wanneer twee of meer datasets met dezelfde productspecificaties gegroepeerd kunnen worden. Zie 3.7 voor meer uitleg.
+Je kiest hier het niveau waarop de metadatarecord betrekking heeft; is het een dataset, datasetserie of service waar de metadata-beschrijving over zal gaan. Volgens `ISO 19115` is een datasetserie een verzameling geografische data die gelijke karakteristieken hebben ten aanzien van het thema, de resolutie en/of methodologie. GDI-Vlaanderen gaat uit van het principe dat een datasetserie pas kan ontstaan wanneer twee of meer datasets met dezelfde productspecificaties gegroepeerd kunnen worden. Zie 3.7 voor meer uitleg.
 
 #### Uitleg dataset
 
-Identificeerbare collectie van data \[ISO34 2002 / ISO 19101:2002\].
+Identificeerbare collectie van data `ISO34 2002` / `ISO 19101:2002`.
 
 Een dataset mag een kleinere groep van data zijn, gelimiteerd door beperkingen zoals een geografisch gebied of geo-objecttype (\"feature type\"), dat aanwezig is in een grotere dataset. De GDI-Vlaanderen metadata Best Practices-richtlijn gaat niet uit van dit soort type datasets.
 
@@ -628,7 +628,7 @@ Zie 3.7 voor meer uitleg.
 
 #### Uitleg datasetserie
 
-Verzameling van datasets met dezelfde productspecificaties \[ISO47 2003 ISO 19115:2003\].
+Verzameling van datasets met dezelfde productspecificaties `ISO47 2003 ISO 19115:2003`.
 
 Toepassing van metadata op datasetseries maakt het de gebruikers van metadata mogelijk om op een hoger niveau dan individuele datasets gegevens te zoeken en vinden. Metadatarecords van datasetseries zijn geschikt voor het zoeken op globale karakteristieken van beschikbare data, maar niet voor diepgaand onderzoek naar de kwaliteit van specifieke datasets bijvoorbeeld. Hiervoor is metadata van datasets noodzakelijk. Figuur 2 geeft een schematische weergave van de relatie tussen de metadata van datasetseries en datasets weer. De hiërarchische relatie tussen een dataset en datasetserie is altijd van verticale aard.  Zie ook 3.7.
 
@@ -669,7 +669,7 @@ Bijvoorbeeld:
 Qua aanbeveling in deze Best Practices-richtlijn wordt voorgesteld om naast **contactpunt** dus ook de **eigenaar**, **beheerder, uitgever** en **verdeler** op te nemen. Ook is het zo dat indien je alle rollen op jou neemt als organisatie, je de contactgegevens telkens moet herhalen per rol die beschreven wordt.
 
   ----------------- ----------------------- ------------------------------------------
-  ISO 19115                                 
+  `ISO 19115`                                 
   Codelijst:                                
   CI_RoleCode                               
   (B.5.5)                                   
@@ -716,11 +716,11 @@ In dit datumveld neem je de datum op waarop de metadata gemaakt of gewijzigd wer
 Het is aanbevolen de naam van de standaard die gebruikt wordt hier op te nemen.
 
 -   Als de inhoud van je metadata gemigreerd is, conform de nieuwe versie van de INSPIRE Technical Guidelines 2.0, ziet dat er zo uit:
-    -   Voor dataset(serie)s: ISO 19115/2003/Cor.1:2006/INSPIRE-TG2.0
-    -   Voor services: ISO 19119:2005/Amd 1:2008/INSPIRE-TG2.0
+    -   Voor dataset(serie)s: `ISO 19115/2003/Cor.1:2006/INSPIRE-TG2.0`
+    -   Voor services: `ISO 19119:2005/Amd 1:2008/INSPIRE-TG2.0`
 -   Als de inhoud van je metadata nog conform de vorige versie van de INSPIRE Technical Guidelines 1.3 is, ziet dat er zo uit:
-    -   Voor dataset(serie)s: ISO 19115/2003/Cor.1:2006
-    -   Voor services: ISO 19119:2005/Amd 1:2008
+    -   Voor dataset(serie)s: `ISO 19115/2003/Cor.1:2006`
+    -   Voor services: `ISO 19119:2005/Amd 1:2008`
 
 ### metadataStandardVersion (ISO element 11)
 
@@ -1512,7 +1512,7 @@ Link: <https://inspire-geoportal.ec.europa.eu/>
 
 Zoals beschreven in de basislogica is het goed om per update van je gegevens een beschrijving van de verandering toe te voegen, samen met de versie (Edition) waar het over gaat. Zo kan een gebruiker heel makkelijk de evolutie van de gegevens volgen, alsook zien wat er precies veranderd is van één versie naar een andere.
 
-## Best Practices - Uitleg per element: ISO 19119 (Service)
+## Best Practices - Uitleg per element: `ISO 19119` (Service)
 
 ### serviceType
 
@@ -1532,7 +1532,7 @@ Echter sinds versie 2.0 van de INSPIRE Metadata Technical Guidelines wordt dit e
 
 ### couplingType
 
-Dit element is verplicht volgens het amendement op ISO 19119. Het definieert het type koppeling tussen een service instance en een dataset. De mogelijke waarden zijn vastgelegd in de codelist 'SV_CouplingType'.
+Dit element is verplicht volgens het amendement op `ISO 19119`. Het definieert het type koppeling tussen een service instance en een dataset. De mogelijke waarden zijn vastgelegd in de codelist 'SV_CouplingType'.
 
 De default-waarde is 'tight'.
 
@@ -1564,7 +1564,7 @@ Voorziet de informatie (via een metadatalink) over de dataset(s) waarop de servi
 <srv:operatesOn xlink:href="https://metadata.vlaanderen.be/metadatacenter/srv/dut/csw?request=GetRecordById&service=CSW&constraintLanguage=CQL_TEXT&version=2.0.2&resultType=results&ElementSetName=full&typenames=csw:Record&id=a106284c-97f8-4533-ba3b-38d9e4deea2d&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd" uuidref="995a09ad-ed36-4b3a-b527-76a26ba7f677"/>
 ```
 
-## Best Practices - Uitleg per element: ISO 19110 (Objectencatalogus)
+## Best Practices - Uitleg per element: `ISO 19110` (Objectencatalogus)
 
 ### FC_FeatureCatalogue (ISO element 1)
 

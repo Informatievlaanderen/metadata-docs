@@ -1,8 +1,8 @@
 # Richtlijn GDI-Vlaanderen Best Practices voor Metadata v2.0
 
-# Versionering
+## Versionering
 
-## Document Revisie 
+### Document Revisie 
 
 | Revisie | Datum      | Contributor(s)                                                                                                    | Commentaar                                                                                                                                                                   |
 | ------- | ---------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@
 | 0.17    | 16/11/2020 | Geraldine Nolf, met revisie van Loes Deventer, Koen De Baets (DQ), Dirk De Baere (Constraints), Tom Callens (GDI) | Aanpassingen hoofdzakelijk t.g.v. de upgrades naar de nieuwe metadatacenters; en de conformiteit met de INSPIRE Technical Guidances 2.0                                      |
 | 0.18    | 03/12/2020 | Geraldine Nolf, Loes Deventer                                                                                     | Correctie van enkele tikfouten, aanvulling van ‘name’ element (4.30.3) binnen distributie                                                                                    |
 
-## Contributors
+### Contributors
 
 | Versie | Naam               | Rol                    | Organisatie               |
 | ------ | ------------------ | ---------------------- | ------------------------- |
@@ -43,7 +43,7 @@
 |        | Koen De Baets      | Reviewer, data quality | Informatie Vlaanderen     |
 |        | Tom Callens        | Reviewer, GDI          | Informatie Vlaanderen     |
 
-## Distributielijst
+### Distributielijst
 
 | Versie | Naam                      | Datum distributie                                                         |
 | ------ | ------------------------- | ------------------------------------------------------------------------- |
@@ -56,7 +56,7 @@
 |        | Werkgroep Datamanagement  | Voorgelegd, met toelichting op 17 december 2020                           |
 |        | Stuurorgaan               | Wordt voorgelegd, met toelichting op 4 februari 2021                      |
 
-## Goedkeuringen
+### Goedkeuringen
 | Versie | Naam                      | Datum           |
 | ------ | ------------------------- | --------------- |
 | 1.0    | Subwerkgroep Metadata     | November 2013   |
@@ -111,9 +111,9 @@ Dit document bevat alle "best practices" - op vraag van de gebruikers-editoren -
 
 Het eerste onderdeel bevat een inleiding met algemene informatie over metadata en objectencatalogi, een tweede onderdeel vertelt je alle generieke informatie die je als achtergrond moet hebben, alvorens aan het editeren te kunnen beginnen. Het derde en laatste onderdeel bevat alle specifieke informatie, de 'Best Practices', of dus de tips, trucks, aanbevelingen en voorbeelden, element per element; weliswaar opgesplitst per ISO-norm voor de duidelijkheid.
 
-# Metadata - Algemene uitleg
+## Metadata - Algemene uitleg
 
-## Achtergrond
+### Achtergrond
 
 GIS-Vlaanderen heeft in 1996 - in afwachting van een ISO-norm - gekozen om metadata op te bouwen volgens een Europese (pre-)norm voor metadata (CEN prEN 27009). Het voormalige AGIV, thans opgegaan in Informatie Vlaanderen, heeft deze norm geïmplementeerd in SPIDI.
 
@@ -135,7 +135,7 @@ Versie 2.0 van deze richtlijn kent vooral verbeteringen ten gevolge van de moder
 
 Huidig document is groeiend, gezien er volgens de noden van de gebruikers nieuwe Best Practices nodig kunnen zijn, die dan worden uitgeschreven en aan deze richtlijn worden bijgevoegd. Uiteraard zullen wijzigingen via release-notes duidelijk beschreven worden, zodat alle gebruikers deze groeiende Best Practices kunnen volgen.
 
-## Wat zijn metadata en waarom is metadata belangrijk?
+### Wat zijn metadata en waarom is metadata belangrijk?
 
 Door data, diensten (services) en toepassingen te beschrijven, wijs je gebruikers de weg doorheen het aanbod aan (geografische) informatie.  Welke gegevens zijn beschikbaar? Waar kan ik ze vinden? Wat zijn de gebruiksvoorwaarden? Hoe actueel of betrouwbaar is deze informatie?  Metadata beantwoordt deze vragen, voorkomt dat data meermaals wordt aangemaakt en zorgt er voor dat geografisch informatie snel kan gevonden worden.
 
@@ -149,7 +149,7 @@ Een metadatarecord is dus als het ware de 'bijsluiter' van een dataset.  Zoals d
 
 Wanneer metadatarecords worden opgeslagen in een te bevragen systeem ontstaat er een zeer krachtig instrument, namelijk een metadatacenter.  Met behulp van een metadatacenter kan een gebruiker zoeken naar datasets. Een metadatarecord biedt dan de nodige elementen om de geschiktheid van een dataset voor een bepaald gebruik te bepalen. Is de resolutie hoog genoeg? Is de dataset wel gebiedsdekkend? Is de kwaliteit hoog genoeg? Wat zijn de gebruiksbeperkingen. Tegen welke voorwaarden kan deze dataset worden aangeschaft? Het opzetten van een metadatacenter stimuleert het (her)gebruik van datasets en vermijdt het dubbel inzamelen van data. Dit is van groot belang gezien de hoge kostprijs van data-inzameling.
 
-## Wat is een objectencatalogus en waarom is dat belangrijk?
+### Wat is een objectencatalogus en waarom is dat belangrijk?
 
 Een objectencatalogus definieert het datamodel, zijnde alle types van objecten, hun operaties, hun attributen, en hun associaties in geografische data, zodat data in bruikbare informatie kan worden omgezet. Een objectencatalogus bevordert het verspreiden, het delen, en het gebruik maken van geografische data door het beter begrijpen van de inhoud en de betekenis van die data.
 
@@ -157,33 +157,33 @@ Een catalogus kan nooit de rijkdom van de geografische realiteit volledig bevatt
 
 Er zijn twee niveaus van geografische objecten (*geographic features*).  De eerste soort objecten (*feature* *instances*) beschrijft discrete fenomenen, die worden geassocieerd met hun geografische en temporele coördinaten en kunnen voorgesteld worden door specifieke geografische symbolen. De tweede soort objecten (*feature types*) beschrijft de groepering van de eerste soort objecten in klasses met gemeenschappelijke kenmerken.
 
-## Het belang van metadata
+### Het belang van metadata
 
 De Geografische Data-infrastructuur (GDI) creëert het kader voor de optimalisering van de aanmaak, het onderhoud, de distributie en het gebruik van geografische informatie op verschillende organisatieniveaus (lokaal, provinciaal, regionaal, nationaal en Europees). Hetzelfde doet de Vlaamse dienstenintegrator (VDI) voor open data. Hierbij wordt zowel de openbare als de private sector betrokken. Vanuit een technisch oogpunt vereist de ontwikkeling van een dergelijke infrastructuur een combinatie van technologieën en kennis afkomstig uit een veelheid van disciplines. Maar één van de meest onderscheidende kenmerken van deze infrastructuur zijn de catalogi en de metadata. Ze vormen het kloppend hart en realiseren de vindbaarheid en de interconnectiviteit van de gegevens en de diensten die aangeboden worden door instanties in Vlaanderen.
 
 Welke (geografische) informatie is beschikbaar? Waar is die te vinden en hoe actueel of betrouwbaar is deze informatie? Zijn er raadpleeg- of downloaddiensten beschikbaar voor deze informatie? Zijn die gegevens meteen ook Open data? De publicatie van metadata in een catalogus maakt het aanbod zichtbaar en te bevragen. Metadata gidst de gebruiker doorheen de beschikbare informatie, voorkomt dubbele inwinning en beheer van data en zorgt ervoor dat geografische informatie snel kan worden gevonden.
 
-### Metadata als essentieel instrument in de informatiehuishouding van de databeheerder
+#### Metadata als essentieel instrument in de informatiehuishouding van de databeheerder
 
 Metadata faciliteren en structureren het databeheer, helpen de databeheerder bij het ontsluiten van het aanbod en optimaliseren de volgende aspecten van de data-infrastructuur:
 
-#### Vinden 
+##### Vinden 
 
 Metadata kan intern in een grote organisatie worden gebruikt om data of services te ontsluiten. Op basis van de beschrijvende kenmerken kan men de juiste dataset zoeken en in viewers of toepassingen tonen en gebruiken.
 
-#### Hergebruik 
+##### Hergebruik 
 
 Metadata kan voor andere organisaties de kwaliteit van de betreffende datasets inzichtelijk maken. Op basis van de metadata kan men beslissen of deze data of service te gebruiken is, of dat er zelf gegevens ingewonnen en gedigitaliseerd moeten worden.
 
-#### Verrijken 
+##### Verrijken 
 
 Op basis van de metadata kan men tot de conclusie komen dat de informatie die men wil vastleggen al grotendeels bestaat. Dit kan er ook toe leiden dat de al bestaande data wordt aangevuld met gegevens, waardoor de dataset voor een grotere doelgroep interessanter wordt.
 
-#### Beheer 
+##### Beheer 
 
 Vanuit het standpunt van het beheer biedt metadata ook de mogelijkheid om de data of service zelf goed te beheren. Zo kunnen alle datasets of services die niet meer actueel zijn makkelijk worden geselecteerd op basis van de metadata. Het is bijvoorbeeld ook mogelijk om alle datasets gemaakt door één persoon of instantie te selecteren.
 
-#### Continuïteit 
+##### Continuïteit 
 
 Bij vertrek van een medewerker is de kennis over de data en de service niet verloren als deze is vastgelegd in de metadata.
 
@@ -198,25 +198,25 @@ Metadata hoeft niet altijd direct toegang te geven tot de dataset(serie) of serv
 
 Eens metadata gepubliceerd worden in een catalogus, beschikt de gebruiker over een krachtig instrument om te navigeren door het beschikbare aanbod. Metadata aangeboden in een catalogus ondersteunen de gebruiker bij het:
 
-#### Zoeken
+##### Zoeken
 
 De eerste stap in het zoeken (discovery = ontdekken) van (geografische) gegevensbronnen is het zoeken van data en services. Dit zoeken gebeurt in catalogi op basis van een zoekterm waarin data of services met behulp van metadata zijn beschreven.
 
-#### Beoordelen 
+##### Beoordelen 
 
 Zodra de gebruiker de (geografische) gegevensbron heeft gevonden, is de volgende stap om deze nader te onderzoeken (evaluation) en te bekijken of de gegevensbron voorziet in de behoefte van de gebruiker. Dit gebeurt door de metadatarecord te onderzoeken (exploration).
 
-#### Verkrijgen
+##### Verkrijgen
 
 Zodra gebruikers de gewenste (geografische) gegevensbron of service hebben gevonden en geëvalueerd, zijn er verschillende manieren om de data te benaderen en te gebruiken. Denk hierbij aan het downloaden of bestellen.
 
-#### Hulpmiddel 
+##### Hulpmiddel 
 
 Metadata kan ook essentiële info leveren bij het gebruik van (geografische) data en services. Voorbeelden hiervan zijn de gebruiksbeperkingen en de toepassingsschaal (voor geografische gegevens) en de licentie (voor open data).
 
-## Metadata standaarden
+### Metadata standaarden
 
-### Normen en standaarden
+#### Normen en standaarden
 
 Om het opstellen van metadata op een uniforme manier te laten verlopen is het nodig een aantal regels in acht te nemen. GDI-Vlaanderen heeft gekozen om geografische gegevens te beschrijven volgens de vigerende normen en standaarden.
 
@@ -226,7 +226,7 @@ De vigerende normen voor metadata van geografische gegevens zijn de ISO-norm voo
 
 Informatie Vlaanderen heeft deze normen geïmplementeerd in de metadatacenters van de GDI-Vlaanderen. Dataproducenten kunnen online gestandaardiseerde metadatarecords bekijken en gestandaardiseerde metadatarecords opstellen, aanpassen en/of verwijderen.
 
-### De ISO-normen
+#### De ISO-normen
 
 ISO staat voor International Organization for Standardization. ISO is 's werelds grootste ontwikkelaar en verdeler van internationale standaarden.
 
@@ -238,27 +238,27 @@ Een ISO-norm is te vergelijken met een grote 'bouwdoos', bestaande uit 'bouwsten
 
 Het objectgeoriënteerde datamodel van de `ISO 19115` bijvoorbeeld (kortweg het meta-datamodel) bestaat uit een groot aantal bouwstenen of metadata-elementen. Met attributen en associaties, gebruikt door klassen, gebruikmakend van codelijsten en enumeraties ondersteunt het meta-datamodel, zo goed mogelijk, elk gebruik van metadata voor geografische gegevens (vb. remote sensing, webservice, data catalogus, ...). De architecten van een metadataprofiel kunnen dan in functie van de noden van hun gebruikersgroep een selectie van metadata-elementen maken. Er kan wel niet willekeurig gekozen worden. De structuur van het model moet gerespecteerd worden. Bovendien stellen de bouwvoorschriften dat de basis van elke standaard dezelfde dient te zijn om een minimale uitwisseling van metadata te garanderen. De uitbreiding van het datamodel is ook onderhevig aan bepaalde bouwvoorschriften. Naast een formele beschrijving van het meta-datamodel bevat de norm ook een aantal 'blauwdrukken' of implementatievoorschriften en\ -voorbeelden die verhelderend werken. De formele beschrijving gebeurt door middel van UML-schema's en een beschrijvend woordenboek, 'data dictionary' genoemd.
 
-#### ISO 19115 standaard - Geographic Information - Metadata 
+##### ISO 19115 standaard - Geographic Information - Metadata 
 
 Deze ISO-norm werd als standaard gebruikt voor Metadata voor datasets en/of datasetseries.
 
-#### ISO 19115 - Technical Corrigendum 1 standaard - Geographic Information - Metadata 
+##### ISO 19115 - Technical Corrigendum 1 standaard - Geographic Information - Metadata 
 
 Alsook het Technisch corrigendum op de `ISO 19115` standaard werd mee opgenomen.
 
-#### ISO 19115-2 standaard - Geographic Information - Metadata - Part 2: Extensions for imagery and gridded data
+##### ISO 19115-2 standaard - Geographic Information - Metadata - Part 2: Extensions for imagery and gridded data
 
 Deze ISO-norm werd nog **niet** mee opgenomen in dit metadataprofiel. Voorlopig moet beeld- en rasterdata dus nog steeds via de eerste versie van de `ISO 19115` + Technical corrigendum 1 beschreven worden.
 
-#### ISO 19119 standaard - Geographic Information - Services 
+##### ISO 19119 standaard - Geographic Information - Services 
 
 Deze ISO-norm werd als standaard gebruikt voor Metadata voor services.
 
-#### ISO 19119 standaard - Geographic Information - Services - Amendment 1: Extensions of the service metadata model
+##### ISO 19119 standaard - Geographic Information - Services - Amendment 1: Extensions of the service metadata model
 
 Alsook dit Amendement op de `ISO 19119` standaard werd mee opgenomen.
 
-#### ISO 19110 - Geographic Information - Methodology for feature cataloguing
+##### ISO 19110 - Geographic Information - Methodology for feature cataloguing
 
 Deze ISO-norm werd als standaard gebruikt voor de Beschrijving van objectencatalogi.
 
@@ -268,7 +268,7 @@ Een objectencatalogus zal niet intrinsiek voorzien worden in de metadata. Inform
 
 Dit wordt concreet via een verwijzing naar enerzijds de objectencatalogus en het informatiemodel anderzijds gerealiseerd.
 
-### De INSPIRE richtlijn en Implementing Rules
+#### De INSPIRE richtlijn en Implementing Rules
 
 [INSPIRE](http://inspire.jrc.ec.europa.eu/) is een kaderrichtlijn, de `INSPIRE Directive 2007/2/EC`, met wetgeving die voor alle Europese lidstaten geldt. Oorspronkelijk opgezet vanuit milieutoepassingen zal INSPIRE dankzij zijn brede toepassing leiden tot een algemene Europese geo-informatie infrastructuur.
 
@@ -276,19 +276,19 @@ INSPIRE Metadata vormt een hoofdstuk van de INSPIRE kaderrichtlijn.
 
 Gedetailleerde technische voorzieningen voor de componenten van de Kaderrichtlijn zullen beschreven worden in Implementing Rules (IR). IRs zelf worden voorgelegd aan het Comité (comitology) dat beslist. En eens beslist, worden de IRs opgenomen als regelgeving.
 
-#### INSPIRE Implementing Rules for Metadata
+##### INSPIRE Implementing Rules for Metadata
 
 De INSPIRE Implementing Rules for Metadata is een eerste IR door Europa vrijgegeven.
 
 Deze INSPIRE-implementatievoorschriften werden mee opgenomen in het metadataprofiel, zowel de extra vereisten voor Metadata van dataset(serie)s, als voor Metadata voor services.
 
-#### INSPIRE Implementing Rules for Metadata: Technical Guidelines
+##### INSPIRE Implementing Rules for Metadata: Technical Guidelines
 
 De Technical Guidelines geeft in detail de vereisten weer die INSPIRE ten aanzien van metadata oplegt, dit voor de aanmaak en het bijhouden van metadata van ruimtelijke datasets, ruimtelijke datasetseries en ruimtelijke data services die overeenkomen met één van de INSPIRE-thema's uit de Annexen I, II en III van de INSPIRE Richtlijn. In deze Technische Guidelines neemt Europa je mee in de implementatie. Hoe je alles technisch voor elkaar krijgt.
 
 Versie 2.0 van deze Guidelines brengt extra duidelijkheid in die aspecten die in de vorige versie (1.3) voor interpretatie vatbaar waren.  Ook zijn goede voorbeelden extra toegevoegd en worden extra aanbevelingen gedaan. Bovendien worden extra mogelijkheden ingevoerd om de metadata goed te kunnen evalueren en/of gebruiken.
 
-## Metadataprofielen
+### Metadataprofielen
 
 Metadata Vlaanderen brengt metadata van data samen afkomstig uit verschillende domeinen. Op dit moment zijn dat enerzijds Geografische gegevens en services en anderzijds Open data. Elk domein heeft specifieke richtlijnen te volgen (al dan niet verplicht opgelegd), waarin de gegevens best beschreven kunnen worden.
 
@@ -303,7 +303,7 @@ In beide domeinen krijgen beheerders van data en diensten via de richtlijn, via 
 
 Omdat ISO-metadata en DCAT-metadata dezelfde kern aan metadata elementen delen (nl. Dublin Core), is de GDI-Vlaanderen richtlijn voor metadata klaar om het e-gov beleid van de Vlaamse, de Federale en de Europese overheid inzake Open Data ten volle te ondersteunen. Dit betekent dat geografische gegevens, die ook 'Vlaamse Open data' zijn, mogen beschreven worden vanuit de richtlijn voor geografische gegevens en van daaruit doorstromen naar het Vlaams Open Data Portaal, waar ze correct gemapt worden op de DCAT-metadata elementen uit de erkende standaard DCAT-AP VL die daar geldt.
 
-## Nieuwtjes door de nieuwe Metadatacenters (in gebruik genomen op 16 november 2020)
+### Nieuwtjes door de nieuwe Metadatacenters (in gebruik genomen op 16 november 2020)
 
 Informatie Vlaanderen geeft jullie graag kort en bondig de belangrijkste aanpassingen mee, door de komst van de nieuwe metadatacenters:
 
@@ -323,7 +323,7 @@ Informatie Vlaanderen geeft jullie graag kort en bondig de belangrijkste aanpass
         -   Er is een upgrade van de technologie 🡺 naar metadata-beheersysteem 'GeoNetwork 3.8';
         -   Er is een upgrade van de metadata-standaard voor het Geografische domein 🡺 dat nu ook conform de 'INSPIRE Technical Guidelines 2.0' is.
 
-## Welk metadatacenter moet je als gebruiker kiezen? 
+### Welk metadatacenter moet je als gebruiker kiezen? 
 
 Wie zijn metadata niet zelf kan aanmaken, kan bij Informatie Vlaanderen terecht. Wij bieden een toepassing aan voor metadata via de opensource-code GeoNetwork, dat aangepast werd volgens de noden van de GDI-Vlaanderen en VDI-gemeenschap. Ook maakte Informatie Vlaanderen de toepassing gebruiksvriendelijk.
 
@@ -333,7 +333,7 @@ Sommige organisaties en beleidsdomeinen hebben een eigen protocol rond metadata.
 
 Tot slot heb je de organisaties die zelf instaan voor de aanmaak en verspreiding van hun producten, maar geen eigen metadatasysteem hebben.  Wie in dat geval is, kan in Metadata Vlaanderen rechtstreeks metadata aanmaken en beheren. Ook de Vlaamse Open data die niet van geografische oorsprong is, wordt hierin gedocumenteerd.
 
-## Komen er veel metadata terecht in zo'n metadatacenter? 
+### Komen er veel metadata terecht in zo'n metadatacenter? 
 
 Metadata Vlaanderen is de centrale voorziening voor het beschrijven en het ontsluiten van gegevens in Vlaanderen. Het merendeel van de metadata wordt echter decentraal ingezameld. Verschillende GDI-Vlaanderen partners of Open data beheerders hebben ten behoeve van hun eigen databeheer metadata-knooppunten opgezet. Via de zoekdiensten of feeds van deze knooppunten stromen de metadata door naar Geopunt, en wanneer die gegevens ook 'Vlaamse Open data' zijn, ook naar het Vlaams Open Data Portaal.
 
@@ -341,7 +341,7 @@ Als hoofdknooppunt in het GDI-Vlaanderen netwerk oogst Geopunt (als portaal) dag
 
 Via een zoekdienst kunnen geografische gegevensbronnen en diensten, aan de hand van hun metadata, op een efficiënte manier gevonden worden. Voor Open data gebeurt dit via een\ (DCAT-)feed. Lees ook 3.4.
 
-## Metadata als basiscomponent van Geopunt en het Vlaamse Open Pata Portaal
+### Metadata als basiscomponent van Geopunt en het Vlaamse Open Pata Portaal
 
 Op de AGIV-trefdag 2013 werd de eerste versie van Geopunt, het Vlaamse geoportaal, gereleased.
 
@@ -359,15 +359,15 @@ Alle beschikbare documenten over DCAT-AP VL vind je op onze webpagina's:
 -   [DCAT-AP VL validator](https://opendata.vlaanderen.be/validator)
 -   [DCAT-AP VL handleiding](https://overheid.vlaanderen.be/sites/default/files/media/Digitale%20overheid/Open%20data/PDF2_Handleiding_DCAT-AP_VL_v1.0_def_0.pdf?timestamp=1585322424)
 
-# Wat je nog moet weten
+## Wat je nog moet weten
 
-## Versiebeheer: algemene uitleg - basislogica voor geografische gegevens
+### Versiebeheer: algemene uitleg - basislogica voor geografische gegevens
 
 Alvorens te starten met editeren, zijn er enkele basisprincipes die uitgelegd moeten worden.
 
 Een metadatarecord staat een-op-een in relatie met zijn dataset / datasetserie / service. Elke keer de gegevens veranderen, moet ook de metadatarecord aangepast worden. Metadata is immers de bijsluiter van de gegevens; en moet 100 % synchroon en up-to-date zijn met zijn gegevens.
 
-### Basislogica voor metadata van datasets van geografische gegevens
+#### Basislogica voor metadata van datasets van geografische gegevens
 
 Als editor moet je de basislogica kennen voor de aanmaak van metadata van datasets.
 
@@ -415,15 +415,15 @@ Let dus ook goed op, wanneer je aan een objectencatalogus aanpassingen doorvoert
 
 Vergeet niet, wanneer de dataset ook gedistribueerd wordt via een service, de metadatarecord van de service, al dan niet via harvesting, navenant aan te passen. Immers is er geen automatische overerving van datasets naar services, noch omgekeerd.
 
-### Basislogica voor metadata van datasetseries
+#### Basislogica voor metadata van datasetseries
 
 De basislogica voor aanpassingen van metadata van datasetseries, volgt dezelfde flow als die voor continu beheerde datasets. Bij updates (zonder wijziging in datamodel), mag je de metadatarecord zelf gaan updaten. Je mag hier geen kopie maken van de bestaande metadatarecord.
 
-### Basislogica voor metadata van services
+#### Basislogica voor metadata van services
 
 De basislogica voor aanpassingen van metadata van services, gebeurt op grondslag van de wijze waarop omgegaan wordt met 'backwards compatibel zijn en blijven' van de service zelf. Zolang voor de eindgebruiker de service hetzelfde blijft doen, kan je de service-update doortrekken in een metadata-update en de metadatarecord zelf gaan updaten. Echter wanneer de service niet meer backwards compatibel is, spreken we van een nieuwe service en moet er ook een kopie gemaakt worden van de metadatarecord.
 
-## Flow van metadatarecords van ontwerp naar publicatie voor geografische gegevens
+### Flow van metadatarecords van ontwerp naar publicatie voor geografische gegevens
 
 In de nieuwe metadatacenters (via de tool GeoNetwork) beschikken we niet alleen over een rol "editor" maar ook over een rol "hoofdeditor".  Organisaties die een externe firma (studiebureau) aannemen voor aanmaak of beheer van metadata bij hun data, kunnen zo het werk dat zij verrichten nog controleren voor de metadatarecord wordt gepubliceerd, bijvoorbeeld.
 
@@ -465,7 +465,7 @@ Daarentegen wordt de "keuring" door Informatie Vlaanderen in Metadata Vlaanderen
 
 Voor Open data, volgens DCAT beschreven, wordt momenteel geen flow gevolgd. Wat aan deze metadata wordt aangepast is steeds publiek.
 
-## Templates en default-waardes in templates ingevuld
+### Templates en default-waardes in templates ingevuld
 
 Er is een sjabloon voorzien voor de beschrijving van een dataset, een datasetserie en een service; alsook van een objectencatalogus. Zo kan je gemakkelijk volgen welke elementen er per soort metadata/objectencatalogus ingevuld kunnen worden. De verplichte elementen worden aangeduid, de voorwaardelijke (conditionele) elementen eveneens, zodat duidelijk is welke elementen moeten ingevuld worden en welke optioneel, of dus extra aanbevolen in te vullen zijn.
 
@@ -476,7 +476,7 @@ Waar kan, zijn er door Informatie Vlaanderen al default-waarden voorzien.
 
 Let dus altijd goed op wanneer default-waarden ingevuld zijn (zeker bij een waarde `0`) en controleer toch alle elementen, zodat de op voorhand ingevulde waarden ook voor jouw metadatarecord opgaan.
 
-## Zoekdienst: conforme CSW-interface beschrijven
+### Zoekdienst: conforme CSW-interface beschrijven
 
 Via een zoekdienst kunnen geografische gegevensbronnen en diensten, aan de hand van hun metadata, op een efficiënte manier gevonden worden. Voor Open data gebeurt dit via een\ (DCAT-)feed.
 
@@ -507,23 +507,23 @@ De tegenhanger van een zoekdienst voor geografische gegevens is een (DCAT-)feed 
 
 Een DCAT-AP VL feed is een DCAT-AP VL catalogus-bestand dat ophaalbaar is via een URL. Dergelijke DCAT-AP VL feed moet aan een aantal technische voorwaarden voldoen, die beschreven staan in de Open data handleiding (op deze locatie: <https://overheid.vlaanderen.be/open-data-handleiding>).
 
-## Identificerende sleutels (identifiers) in ISO 19115
+### Identificerende sleutels (identifiers) in ISO 19115
 
-### Metadatarecord identificatie
+#### Metadatarecord identificatie
 
 In ISO 19115 wordt de identificatie van metadatarecords geregeld door de fileIdentifier, een tekenreeks opgenomen in het MD_Metadata object. Deze tekenreeks wordt vervangen door een MD_Identifier object in de herziening (januari 2014) van de ISO 19115 metadata standaard.
 
 Het gebruik van fileIdentifiers in de ISO metadata geeft metadatabeheerders een mechanisme om metadatarecords uniek te identificeren. Dit wordt steeds belangrijker naarmate metadata beheerd wordt in verschillende gedecentraliseerde metadatacatalogi die door een centrale catalogus (Metadata Vlaanderen catalogus) geoogst worden. Er is geen betrouwbare manier om dubbele records te identificeren zonder een unieke identificator.
 
-## Meertaligheid metadata
+### Meertaligheid metadata
 
 In deze Best Practices-richtlijn nemen we voorlopig het standpunt in dat metadatarecords enkel in één taal worden voorzien. Meestal zal dit het Nederlands zijn, de standaardtaal voor Vlaanderen.
 
 Dit sluit niet uit dat wanneer de vraag naar meertaligheid in de toekomst opgelegd wordt, dit ook kan/moet toegepast worden.
 
-## Verwante datasets vs. datasetseries vs. datasets
+### Verwante datasets vs. datasetseries vs. datasets
 
-### Dataset - ISO 19115:2003 definitie 
+#### Dataset - ISO 19115:2003 definitie 
 
 Identificeerbare collectie van data (ISO 34 2002)
 
@@ -531,19 +531,19 @@ OPMERKING: Een dataset mag een kleinere groep van data zijn, gelimiteerd door be
 
 De Vlaamse metadatastandaard voor geografie gaat niet uit van het type datasets zoals theoretisch beschreven kan worden.
 
-### Datasetserie - ISO 19115:2003 definitie
+#### Datasetserie - ISO 19115:2003 definitie
 
 Verzameling van datasets met dezelfde productspecificaties (ISO 47 2003)
 
 Productspecificaties zijn volgens Nederland 'thema, resolutie en methodologie'. Toepassing van metadata op datasetseries maakt het gebruikers van de metadata mogelijk om op een hoger niveau dan individuele datasets data te zoeken. Metadata van datasetseries zijn geschikt voor het zoeken op globale karakteristieken van beschikbare data, maar niet voor diepgaand onderzoek naar de kwaliteit van specifieke datasets. Hiervoor is metadata van datasets noodzakelijk. De hiërarchische relatie tussen een dataset en datasetserie is altijd van verticale aard.
 
-### Verwante datasets
+#### Verwante datasets
 
 Volgens ISO 19115:2003 worden de horizontale relaties tussen datasets vastgelegd in de codelijst DS_AssociationTypeCode (B.5.7).
 
 Nederland neemt net zoals Vlaanderen enkel de 'crossReference' als type van relatie op, waarbij verwante datasets dus duiden op een referentie van de ene dataset naar een andere. (Van de verwante dataset(s) worden altijd de titel en datum ingevoerd.)
 
-### FIGUUR: 'dataset' - 'datasetserie' - 'verwante datasets'
+#### FIGUUR: 'dataset' - 'datasetserie' - 'verwante datasets'
 
 verwante datasets
 
@@ -557,9 +557,9 @@ DATASET X
 
 Figuur 1: Interactie tussen de begrippen dataset, datasetserie en verwante dataset
 
-## Verschil template DS - DSS 
+### Verschil template DS - DSS 
 
-### Hoe maak je metadata van een datasetserie?
+#### Hoe maak je metadata van een datasetserie?
 
 -   Vertrek van het metadatasjabloon voor een datasetserie, vanuit de tool GeoNetwork.
 
@@ -568,7 +568,7 @@ Merk op in dit sjabloon zal de serie default ingevuld zijn via:
 -   hierarchyLevel: series (zie 4.5)
 -   hierarchyLevelName: Datasetserie (zie 4.6)
 
-### Hoe geef je aan dat een dataset deel uitmaakt van een datasetserie of verwant is met een andere dataset?
+#### Hoe geef je aan dat een dataset deel uitmaakt van een datasetserie of verwant is met een andere dataset?
 
 -   Zorg voor opname van een `parentIdentifier` (zie 4.4)
 -   Geef de naam op van de serie of geaggregeerde dataset waarvan de betrokken dataset deel uitmaakt
@@ -581,7 +581,7 @@ Een voorbeeld van hoe dit er in XML uitziet:
 ![](media/image3.png){width="6.035395888013999in"
 height="3.0729166666666665in"}
 
-### Hoe kan je linken leggen tusssen datasets en datasetseries in de tool GeoNetwork?
+#### Hoe kan je linken leggen tusssen datasets en datasetseries in de tool GeoNetwork?
 
 In de tool GeoNetwork kan je via het rechterpaneel een link toevoegen:
 
@@ -590,9 +590,9 @@ In de tool GeoNetwork kan je via het rechterpaneel een link toevoegen:
 
 En vervolgens kies je de correcte dataset(serie) uit de gepubliceerde metadatarecords die in de catalogus aanwezig zijn. Deze link wordt enkel in de catalogus gelegd, hierdoor wordt deze link niet weggeschreven in de XML van de metadatarecord zelf.
 
-# Best Practices - Uitleg per element: ISO 19115 (Datasets / Datasetseries)
+## Best Practices - Uitleg per element: ISO 19115 (Datasets / Datasetseries)
 
-## fileIdentifier (ISO element 2) 
+### fileIdentifier (ISO element 2) 
 
 Dit element bevat de waarde die een metadatarecord uniek identificeert.  In de ISO 19115 (Geographic Information - Metadata) wordt deze identificerende sleutel (identifier) als tekenreeks gedefinieerd (/gmd:fileIdentifier/gco:CharacterString). Geadviseerd wordt om gebruik te maken van een betekenisloze identifier zoals een Universal Unique Identifier (UUID, <http://en.wikipedia.org/wiki/UUID>) of een Uniform Resource Identifier (URI, <http://nl.wikipedia.org/wiki/Uniform_Resource_Identifier>) om de uniciteit van de sleutel te garanderen.
 
@@ -600,25 +600,25 @@ Bijvoorbeeld: 17e50f84-5882-40d9-b0ed-7e062d9d26ac (UUID)
 
 Het fileIdentifier-element is geen INSPIRE-verplicht element, maar is essentieel om het oogsten van metadata uit verschillende metadatacatalogi mogelijk te maken. Zonder fileIdentifier in een metadatarecord is het niet mogelijk om dubbele metadatarecords te identificeren. De fileIdentifier faciliteert eveneens de definitie van child-parent relaties tussen metadatarecords.
 
-## language (ISO element 3)
+### language (ISO element 3)
 
 Hier beschrijf je de taal die in de metadatarecord wordt gebruikt. In veel gevallen is Nederlands de default-waarde.
 
-## charachterSet (ISO element 4)
+### charachterSet (ISO element 4)
 
 Dit element bevat de volledige naam van de karakter codeerstandaard die gebruikt wordt om de metadatarecord te beschrijven. Er is keuze uit de ISO-codelijst 'MD_CharacterSetCode' (B.5.10). Echter is de meest voorkomende waarde hier UTF-8.
 
-## parentIdentifier (ISO element 5)
+### parentIdentifier (ISO element 5)
 
 Je moet het element alleen invullen als er een dataset(serie) bestaat met een hogere hiërarchie. Je neemt hier de unieke identificator van de metadatarecord (fileIdentifier) op waarvan deze metadatarecord een subset is (de datasetserie bv.).
 
 Zie 3.7 en 3.8 voor de uitleg datasets / datasetseries en zie ook 4.1 voor de uitleg over de fileIdentifier.
 
-## hierarchyLevel (ISO element 6)
+### hierarchyLevel (ISO element 6)
 
 Je kiest hier het niveau waarop de metadatarecord betrekking heeft; is het een dataset, datasetserie of service waar de metadata-beschrijving over zal gaan. Volgens ISO 19115 is een datasetserie een verzameling geografische data die gelijke karakteristieken hebben ten aanzien van het thema, de resolutie en/of methodologie. GDI-Vlaanderen gaat uit van het principe dat een datasetserie pas kan ontstaan wanneer twee of meer datasets met dezelfde productspecificaties gegroepeerd kunnen worden. Zie 3.7 voor meer uitleg.
 
-### Uitleg dataset
+#### Uitleg dataset
 
 Identificeerbare collectie van data \[ISO34 2002 / ISO 19101:2002\].
 
@@ -626,7 +626,7 @@ Een dataset mag een kleinere groep van data zijn, gelimiteerd door beperkingen z
 
 Zie 3.7 voor meer uitleg.
 
-### Uitleg datasetserie
+#### Uitleg datasetserie
 
 Verzameling van datasets met dezelfde productspecificaties \[ISO47 2003 ISO 19115:2003\].
 
@@ -639,15 +639,15 @@ Toepassing van metadata op datasetseries maakt het de gebruikers van metadata mo
 </figure>
 ```
 
-### Uitleg Service
+#### Uitleg Service
 
 Apart te onderscheiden onderdeel van de functionaliteit die via interfaces door een entiteit wordt aangeboden \[ISO/IEC TR 14252\].
 
-## hierarchyLevelName (ISO element 7)
+### hierarchyLevelName (ISO element 7)
 
 De naam van het hiërarchie-niveau is meestal 'Dataset', 'Datasetserie' of 'Dienst'.
 
-## contactgegevens (ISO element 8; m.i.v. 374, 375, 376, 378, 387, 388, 407, 408, 409, 389, 380, 381, 382, 384, 385, 386, 390, 396, 397, 379)
+### contactgegevens (ISO element 8; m.i.v. 374, 375, 376, 378, 387, 388, 407, 408, 409, 389, 380, 381, 382, 384, 385, 386, 390, 396, 397, 379)
 
 Dit element beschrijft de identificatie van de verantwoordelijke organisatie.
 
@@ -707,11 +707,11 @@ Qua aanbeveling in deze Best Practices-richtlijn wordt voorgesteld om naast **co
   auteur            author                  Partij die auteur is van de data
   ----------------- ----------------------- ------------------------------------------
 
-## dateStamp (ISO element 9)
+### dateStamp (ISO element 9)
 
 In dit datumveld neem je de datum op waarop de metadata gemaakt of gewijzigd werd. Het formaat van de datum moet als volgt opgebouwd zijn: `JJJJ-MM-DD` (met koppeltekens).
 
-## metadataStandardName (ISO element 10)
+### metadataStandardName (ISO element 10)
 
 Het is aanbevolen de naam van de standaard die gebruikt wordt hier op te nemen.
 
@@ -722,7 +722,7 @@ Het is aanbevolen de naam van de standaard die gebruikt wordt hier op te nemen.
     -   Voor dataset(serie)s: ISO 19115/2003/Cor.1:2006
     -   Voor services: ISO 19119:2005/Amd 1:2008
 
-## metadataStandardVersion (ISO element 11)
+### metadataStandardVersion (ISO element 11)
 
 Het is aanbevolen de versie van de standaard die gebruikt wordt hier op te nemen.
 
@@ -731,7 +731,7 @@ Het is aanbevolen de versie van de standaard die gebruikt wordt hier op te nemen
 -   Als de inhoud van je metadata nog conform de vorige versie van de INSPIRE Technical Guidelines 1.3 is, ziet dat er zo uit:
     -   GDI-Vlaanderen Best Practices - versie 1.0
 
-## referenceSystemInfo (ISO element 13; m.i.v. 186, 187, 208, 207, 208.1)
+### referenceSystemInfo (ISO element 13; m.i.v. 186, 187, 208, 207, 208.1)
 
 In dit element voor het gebruikte ruimtelijke referentiesysteem geven we de identificatie mee van het coördinatenstelsel waarop de dataset is gebaseerd. Er kunnen één of meerdere referentiesystemen opgegeven worden. Er moet minstens één horizontaal of verticaal referentiesysteem opgegeven worden.
 
@@ -783,7 +783,7 @@ In de metadatacenters nemen we voor het gebruikersgemak van alle editoren de mee
 
 Let op: Als je geen hoogte- of diepte-waarden in je gegevens hebt, dan neem je geen verticaal referentiesysteem (zoals Ostend Height) op.
 
-## title (ISO element 360)
+### title (ISO element 360)
 
 Zorg ervoor dat de titel van de dataset(serie) of service identificerend is over alle dataset(serie)s of services en hun versies heen; dat het leesbaar Nederlands is (of dus best zonder afkortingen, deze kan je best houden voor de alternatieve titel); en zorg ervoor dat deze niet te lang wordt.
 
@@ -791,35 +791,35 @@ Let wel: een titel kan in de tijd veranderen (bv. een correctie van een tikfout;
 
 Alleen ISO element 3 (zie 4.1) 'fileIdentifier' is het enige unieke element waarmee je over alle datasets, datasetseries en services heen een metadatarecord identificerend kunt beschrijven.
 
-## edition (ISO element 363)
+### edition (ISO element 363)
 
 De versie-omschrijving van de dataset(serie) moet zeker hier opgenomen worden. Een gebruiker kan aan dit element weten over welke versie de metadataset gaat.
 
 Daarnaast wordt ook naar dit element verwezen in het element 4.32. Per versie van de gegevens wordt daar immers weggeschreven wat de bewerkingen zijn die werden doorgevoerd ten opzichte van de vorige versie ervan.
 
-## identifier (ISO element 365; 207)
+### identifier (ISO element 365; 207)
 
 Deze identificator bevat de waarde die de dataset, die door de metadata beschreven wordt, uniek identificeert. Identificatoren worden standaard met "MD_Identifier" ingevuld. Alleen bij het referentiesysteem wordt met "RS_Identifier" (ISO element 365; m.i.v. 208, 207, 208.1) gewerkt.
 
 Geadviseerd wordt om voor de code gebruik te maken van een betekenisloze identificator zoals een Universal Unique Identifier (UUID, <http://en.wikipedia.org/wiki/UUID>) of een Uniform Resource Identifier (URI, <http://nl.wikipedia.org/wiki/Uniform_Resource_Identifier>), om de uniciteit van de sleutel te garanderen.
 
-## series
+### series
 
 Zie 3.7 voor meer uitleg.
 
-## abstract (ISO element 25)
+### abstract (ISO element 25)
 
 Hier beschrijf je een korte beschrijving van de dataset(serie)/service.  Alle relevante informatie die een gebruiker nodig heeft om de inhoud van de dataset(serie)/service te kennen, moet hier beschreven zijn.
 
 De beschrijving van waar de gebruiker zijn foutenrapportering kwijt kan, neem je best niet hier op, maar bij het element supplementalInformation onder het onderdeel DataIdentification.
 
-## purpose (ISO element 26)
+### purpose (ISO element 26)
 
 De reden waarom de dataset(serie) bedoeld is, wordt hier neergeschreven.
 
 Voor gegevens afkomstig van de Vlaamse overheid wordt aangeraden volgende zin toe te voegen: "De gegevens zijn bedoeld voor taken van algemeen belang." Let op, deze zin gaat niet in alle gevallen op.
 
-## status (ISO element 28)
+### status (ISO element 28)
 
 Het element status wordt via een invoerveld met vaste waarden beschreven. Hier is het belangrijk dat jouw metadatarecord de juiste status van de dataset(serie)/service beschrijft. Zie ook 3.1.  Bijvoorbeeld:
 
@@ -829,7 +829,7 @@ Het element status wordt via een invoerveld met vaste waarden beschreven. Hier i
     - ofwel wordt de oude versie nog verdeeld en wordt de status op 'historisch archief' gezet en de metadata verder gepubliceerd,
     - ofwel wordt de oude versie niet meer verdeeld en wordt de metadata gedepubliceerd.
 
-## fileName (ISO element 49)
+### fileName (ISO element 49)
 
 Het wordt aangeraden om een voorbeeldweergave te voorzien. Ofwel kies je een goed beeld om jouw dataset(serie) te representeren; ofwel neem je een veelzeggend voorbeeld uit jouw dataset zelf.
 
@@ -839,9 +839,9 @@ De JPEG of PNG-extensie voorzie je best wel in kleine letters (bijvoorbeeld .png
 
 Tip: merk op dat in de nieuwe versie van de tool GeoNetwork de voorbeeldweergaven nu in het rechterpaneel moeten worden opgeladen of toegevoegd.
 
-## descriptiveKeywords (ISO element 33; m.i.v. 52, 53, 55, 359, 360, 361, 393, 394, 395)
+### descriptiveKeywords (ISO element 33; m.i.v. 52, 53, 55, 359, 360, 361, 393, 394, 395)
 
-### keyword (ISO element 53)
+#### keyword (ISO element 53)
 
 Trefwoorden zijn algemene begrippen die een dataset(serie)/service beschrijven en vooral te bevragen maken. Hoe beter je de trefwoorden kiest, hoe eenvoudiger een gebruiker de best geschikte dataset(serie)/service vindt die hij zoekt.
 
@@ -918,7 +918,7 @@ In onderstaande tabel staat het overzicht aan thesauri en wanneer je deze verpli
 | Losse trefwoorden    |                       |                      |
 +----------------------+-----------------------+----------------------+
 
-#### GEMET - INSPIRE themes, version 1.0 -- thesaurus 
+##### GEMET - INSPIRE themes, version 1.0 -- thesaurus 
 
 Voor INSPIRE-dataset(serie)s moet tenminste één trefwoord uit de GEMET-thesaurus met de INSPIRE-thema's (<http://inspire.ec.europa.eu/theme/>) gekozen worden, in de exacte notatie (met ev. spelfouten en hoofdletters waar toegepast).
 
@@ -926,7 +926,7 @@ Dit trefwoord dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, al
 
 Een voorbeeld in XML van het INSPIRE-thema "Gebiedsbeheer, gebieden waar beperkingen gelden, gereguleerde gebieden en rapportage-eenheden" voor het implementeren met "Anchor"-elementen:
 
-#### GEMET - Concepten, versie 2.4 - thesaurus 
+##### GEMET - Concepten, versie 2.4 - thesaurus 
 
 Voor INSPIRE-dataset(serie)s moet tenminste één trefwoord uit de GEMET-thesaurus met de INSPIRE-concepten (<http://www.eionet.europa.eu/gemet/>), in de exacte notatie (met ev.  spelfouten en hoofdletters waar toegepast).
 
@@ -934,7 +934,7 @@ Dit trefwoord dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, al
 
 Een voorbeeld in XML van de GEMET-concepten "geografie" en "luchtfotografie" voor het implementeren met "Anchor"-elementen:
 
-#### Verordening (EG) nr. 1205/2008 van de Commissie van 3 december 2008 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende metagegevens
+##### Verordening (EG) nr. 1205/2008 van de Commissie van 3 december 2008 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende metagegevens
 
 Voor INSPIRE-services dient er op z'n minst één keyword uit de categorie of subcategorie gekozen te worden uit deel D.4 van de verordening (EG) NR. 1205/2008 van de Commissie (<http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory>), in de exacte notatie (met ev. spelfouten en hoofdletters waar toegepast).
 
@@ -942,7 +942,7 @@ Dit trefwoord dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, al
 
 Een voorbeeld in XML van de Dienst kaarttoegang (infoMapAccessService) uit deze thesaurus voor het implementeren met "Anchor"-elementen:
 
-#### INSPIRE priority data set thesaurus
+##### INSPIRE priority data set thesaurus
 
 In functie van de INSPIRE Monitoring en Rapportering, vraagt Europa om de 'prioritaire datasets' met een trefwoord uit de thesaurus van de "INSPIRE priority data set" aan te duiden (<http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset>), in de exacte notatie (met ev. spelfouten en hoofdletters waar toegepast).
 
@@ -950,7 +950,7 @@ Dit trefwoord dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, al
 
 Een voorbeeld in XML van Agglomerations (Noise Directive) uit deze thesaurus voor het implementeren met "Anchor"-elementen:
 
-#### INSPIRE Spatial scope thesaurus
+##### INSPIRE Spatial scope thesaurus
 
 In functie van de INSPIRE Monitoring en Rapportering, vraagt Europa om een trefwoord uit de thesaurus "INSPIRE Spatial scope" te kiezen (<http://inspire.ec.europa.eu/metadata-codelist/SpatialScope>), in de exacte notatie (met ev. spelfouten en hoofdletters waar toegepast).
 
@@ -960,7 +960,7 @@ In Vlaanderen kunnen we de datasets quasi default met het trefwoord 'Regionaal' 
 
 Een voorbeeld in XML van het trefwoord 'Regionaal' uit deze thesaurus voor het implementeren met "Anchor"-elementen:
 
-#### Vlaamse Regio's thesaurus
+##### Vlaamse Regio's thesaurus
 
 De thesaurus "Vlaamse Regio's" is soortgelijk als de "INSPIRE Spatial scope" en kan vaak default met 'Vlaams Gewest' worden ingevuld, maar ook de provincies en de steden en gemeenten zijn er in gedefinieerd (<https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Vlaamse-Administratieve-Eenheden>), in de exacte notatie (met ev. spelfouten en hoofdletters waar toegepast).
 
@@ -968,11 +968,11 @@ Dit trefwoord dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, al
 
 Een voorbeeld in XML van het trefwoord Vlaams Gewest uit deze thesaurus voor het implementeren met "Anchor"-elementen:
 
-#### GDI-Vlaanderen thesaurus
+##### GDI-Vlaanderen thesaurus
 
 Voor de GDI-Vlaanderen voorzien we eveneens een lijst trefwoorden, van belang om bepaalde kwaliteitseigenschappen aan te geven, of om de dataset(series)/services een bepaald statuut mee te kunnen geven.  Hieronder worden ze opgelijst, met hun bijhorende uitleg en het overzicht.
 
-#### Statuut
+##### Statuut
 
 -   Toegevoegd GDI-Vl
     -   Pas wanneer en voor zolang dat de gegevens aan de GDI-Vlaanderen zijn toegevoegd, neem je dit trefwoord op uit deze thesaurus.
@@ -995,7 +995,7 @@ Voor de GDI-Vlaanderen voorzien we eveneens een lijst trefwoorden, van belang om
 
 Alle trefwoorden die de gegevens een 'statuut' bezorgen, dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, als je via het Metadatacenter of via Metadata Vlaanderen editeert met de tool GeoNetwork.
 
-#### Kwaliteitseigenschappen
+##### Kwaliteitseigenschappen
 
 -   Metadata INSPIRE-conform
     -   Wanneer jouw metadatarecord INSPIRE-conform is, krijgt hij automatisch dit trefwoord toegekend bij het publiceren ervan via het Metadatacenter of via Metadata Vlaanderen met de tool GeoNetwork. Zo ook bij het harvesten naar Metadata Vlaanderen vanuit een andere CSW-zoekdienst.
@@ -1020,7 +1020,7 @@ Het overzicht van alle trefwoorden uit de GDI-Vlaanderen thesaurus, ziet er zo u
 
 Of in XML met de "Anchor"-elementen ziet dit overzicht er zo uit:
 
-#### GDI-Vlaanderen Service Types thesaurus
+##### GDI-Vlaanderen Service Types thesaurus
 
 Voor metadata van services kan je het "Service Type" via een trefwoord uit die thesaurus opnemen (<https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Service-Types>), in de exacte notatie (met ev. spelfouten en hoofdletters waar toegepast).
 
@@ -1028,7 +1028,7 @@ Dit trefwoord dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, al
 
 Een voorbeeld in XML van het trefwoord OGC:WMS uit deze thesaurus voor het implementeren met "Anchor"-elementen:
 
-#### Data.gov.be themes thesaurus
+##### Data.gov.be themes thesaurus
 
 Voor Vlaamse Open data kan je ook een trefwoord opnemen uit de thesaurus van de "Data.gov.be themes" (<http://vocab.belgif.be/auth/datatheme>), in de exacte notatie (met ev. spelfouten en hoofdletters waar toegepast).
 
@@ -1038,29 +1038,29 @@ Dit trefwoord dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, al
 
 Een voorbeeld in XML van het trefwoord Energie uit deze thesaurus voor het implementeren met "Anchor"-elementen:
 
-#### Eigen of andere thesaurus
+##### Eigen of andere thesaurus
 
 Het is ook mogelijk trefwoorden uit een eigen thesaurus op te geven, of trefwoorden uit een andere thesaurus in te vullen.
 
-### thesaurusName (ISO element 55; m.i.v. 359, 360, 361, 362, 393, 394, 395)
+#### thesaurusName (ISO element 55; m.i.v. 359, 360, 361, 362, 393, 394, 395)
 
 Is enkel verplicht in te vullen als de trefwoorden die gekozen worden uit een thesaurus afkomstig zijn. Probeer dit zo veel als mogelijk via een "Anchor"-implementatie te documenteren.
 
 Het overzicht van verplicht in te vullen thesauri staat in de tabel hierboven (zie 4.20.1.1).
 
-#### title (ISO element 360)
+##### title (ISO element 360)
 
 Zie 4.20.1.1, 4.20.1.2, 0, 0, 0, 0, 4.20.1.7, 0 en 0 voor de juiste schrijfwijze van de hierboven vermelde thesauri. Zeker indien je niet via de metadatacenters editeert met de tool GeoNetwork.
 
-#### date (ISO element 394)
+##### date (ISO element 394)
 
 De thesaurus datum hangt samen met de thesaurus die gekozen werd. Je vult er best de publicatiedatum van de thesaurus in.
 
-#### dateType (ISO element 395)
+##### dateType (ISO element 395)
 
 De thesaurus datumtype hangt eveneens samen met de thesaurus die gekozen werd. Er is keuze tussen een creatie-, publicatie-, of revisiedatum. Je vult er best het datumtype 'publicatie' in.
 
-## resourceConstraints (ISO element 35; m.i.v. 67, 68, 69, 68, 70, 71, 72, 73, 68, 74)
+### resourceConstraints (ISO element 35; m.i.v. 67, 68, 69, 68, 70, 71, 72, 73, 68, 74)
 
 (67)MD_Constraints wordt voorbehouden voor het documenteren van **inhoudelijke gebruiksbeperkingen**: voor welk gebruik de resource niet geschikt of bedoeld is. Deze MD_Constraints zijn dus niet (meer(!)) bedoeld voor het documenteren van legale toegangs- of gebruiksbeperkingen.
 
@@ -1097,17 +1097,17 @@ Om alles nog makkelijker te maken, heeft Informatie Vlaanderen in de tool GeoNet
 -   Onder de tab: Toegangs-en gebruiksbeperkingen, gebruik de knop '+Beperkingen' om een licentie toe te voegen. Een lijst met de beschikbare mogelijkheden wordt op het scherm getoond. Bij selectie van een beperking, zijn de velden automatisch ingevuld. **update 19/1/2026**
 -   Verwijderen van de screenshot hieronder, is verouderd **update 19/1/2026**
 
-## aggregationInfo (ISO element 35.1; m.i.v. 66.1, 66.2, 359, 360, 361, 362, 393, 394, 395, 66.3, 208, 207, 208.1, 66.4)
+### aggregationInfo (ISO element 35.1; m.i.v. 66.1, 66.2, 359, 360, 361, 362, 393, 394, 395, 66.3, 208, 207, 208.1, 66.4)
 
 Zie 3.7.
 
-## spatialResolution (ISO element 38; m.i.v. 59, 60, 56, 57, 61)
+### spatialResolution (ISO element 38; m.i.v. 59, 60, 56, 57, 61)
 
 Vectordataset(series) moet je via de noemer van de toepassingsschaal (denominator) beschrijven (zie 0); rasterdatasets moeten via de grondresolutie (distance) beschreven worden (zie 4.23.2).
 
 Voor de niet-geografische datasets bevelen we aan de noemer (denominator) in te vullen met 1 (zie 0).
 
-### denominator (ISO element 57)
+#### denominator (ISO element 57)
 
 Hier wordt alleen de noemer van de schaalbreuk opgenomen. Bijvoorbeeld:
 
@@ -1121,7 +1121,7 @@ Voor vectordata bevelen we aan deze mapping te volgen:
 
 Voor de niet-geografische data stellen we de noemer (denominator) in op `1`.
 
-### **distance** (ISO element 61)
+#### **distance** (ISO element 61)
 
 Voor rasterdata wordt hier de grondresolutie van de data opgenomen. Bijvoorbeeld: 
 
@@ -1129,25 +1129,25 @@ Voor rasterdata wordt hier de grondresolutie van de data opgenomen. Bijvoorbeeld
 <gco:Distance uom="m">0.25</gco:Distance>
 ```
 
-## language (ISO element 39) 
+### language (ISO element 39) 
 
 Hier beschrijf je de taal die in de dataset(serie)/service wordt gebruikt. In veel gevallen is de waarde Nederlands.
 
-## characterSet (ISO element 40)
+### characterSet (ISO element 40)
 
 Voor INSPIRE verplicht, als voor de uitwisseling van de bron geen GML wordt gebruikt en de gebruikte karakterset geen UTF-8 is. Voor niet-INSPIRE-dataset(serie)s is het verplicht als de waarde niet voldoet aan de ISO/IEC 10646 standaard. UTF-8 en UTF-16 voldoen aan deze standaard.
 
-## topicCategorie (ISO element 41)
+### topicCategorie (ISO element 41)
 
 Je kan hier de categorie waar jouw dataset(serie)/service toe behoort kiezen uit de lijst van ISO-categorieën, die ook door INSPIRE werden overgenomen.
 
 Wanneer jouw gegevens Vlaamse Open data zijn, wordt deze ISO-categorie ook daar gebruikt en gemapt naar het DCAT-theme; tenzij je zelf een trefwoord gekozen had uit de "Data.gov.be themes" thesaurus (zie 0).
 
-## GeographicIdentifier (ISO element 207)
+### GeographicIdentifier (ISO element 207)
 
 Beschrijf hier in woorden over welk geografisch gebied jouw gegevens verspreid zijn. Deze term wordt ook gebruikt in zoekacties. Er wordt eveneens een suggestielijst voorgesteld van veel voorkomende termen, zodat ze op eenzelfde manier worden benoemd of geschreven.
 
-## TemporalExtent (ISO element 351)
+### TemporalExtent (ISO element 351)
 
 Het element temporele begrenzing beschrijft de inhoudelijke geldigheid van de gegevens.
 
@@ -1155,7 +1155,7 @@ Als de gegevens zelf inhoudelijke begin- en einddata hebben, moet voor de begind
 
 Als je gegevens zelf geen inhoudelijke begin- en einddata hebben, dan geldt als begindatum van de temporele begrenzing de einddatum van temporele begrenzing van de vorige versie van de gegevens; en als einddatum van de temporele begrenzing de nieuwe versiedatum van de huidige gegevens.
 
-## contentInfo (ISO element 15; m.i.v. 232, 233, 236, 238, 359, 360, 361, 362, 393, 394, 395)
+### contentInfo (ISO element 15; m.i.v. 232, 233, 236, 238, 359, 360, 361, 362, 393, 394, 395)
 
 Een objectencatalogus kan via deze elementen worden toegevoegd, nadat hij zelf beschreven werd. Je kan via het element "includedWithDataset" (element 236) aangeven of er een objectencatalogus-beschrijving vervat zit in de metadatarecord.
 
@@ -1165,7 +1165,7 @@ Als je via metadatacenters editeert met de tool GeoNetwork, krijg je daar een hu
 
 Voor meer uitleg over het invullen van de elementen in de objectencatalogus zelf kan je terecht bij onderdeel 6 van dit document.
 
-## distributionInfo (ISO element 17; m.i.v. 270, 271, 284, 285, 286, 272, 279, 280, 374 (all in), 281, 298, 299, 301, 302, 273, 274, 275, 276, 277, 396, 397, 278, 291, 292)
+### distributionInfo (ISO element 17; m.i.v. 270, 271, 284, 285, 286, 272, 279, 280, 374 (all in), 281, 298, 299, 301, 302, 273, 274, 275, 276, 277, 396, 397, 278, 291, 292)
 
 Het luik van de distributionInfo bestaat voor de onLine overdracht uit vijf elementen die met elkaar gecombineerd worden om de distributie volledig te kunnen beschrijven: Linkage, Protocol, Name, Description en Function.
 
@@ -1177,7 +1177,7 @@ Elk van de elementen wordt hieronder uitvoerig beschreven (zie 4.30.1, 4.30.2, 4
 
 Tot slot zie je in de laatste twee hoofdstukken hieronder toegepaste praktijkvoorbeelden van de combinatie van deze vijf metadata-elementen voor onLine bronnen voor de meest gangbare geografische webservices (WMS, WMTS, WFS en WCS), zowel voor de beschrijving van een dataset, die via een service ontsloten wordt (zie 4.30.5), als voor de service zelf (zie 4.30.7).
 
-### linkage (ISO element 397)
+#### linkage (ISO element 397)
 
 Dit element is verplicht. Het geeft je de link naar meer informatie over de bron en / of er een link is die toegang geeft tot gerelateerde services, ook al is die service zelf ook voorzien van metadata.
 
@@ -1185,7 +1185,7 @@ Het bevat een valide URL voor de online toegang tot de bron of als er niet een d
 
 De combinatie van de URL (ISO element 397), het protocol dat je daarmee ondersteunt (ISO element 398), de naam (ISO element 400) en de beschrijving (ISO element 401) zorgt ervoor dat je volledigere, correctere en kwalitatievere metadata van jouw data of dienst beschrijft. Meer nog, de gegevens worden zichtbaarder, concreet brengen de waarden, die in deze elementen beschreven worden, meteen meerwaarde in het Geopunt-portaal (zie ook 4.30.2).
 
-#### Linkage voor metadata van **datasets**, die ook via een service ontsloten worden
+##### Linkage voor metadata van **datasets**, die ook via een service ontsloten worden
 
 -   **WMS**: We raden aan om deze URL's in de linkage op te nemen:
     -   Eénmaal opname van GetCapabilities-operatie
@@ -1202,7 +1202,7 @@ De combinatie van de URL (ISO element 397), het protocol dat je daarmee onderste
     -   Eénmaal opname van GetCapabilities-operatie
     -   Per 'CoverageSummary' in de service GetCoverage-operatie
 
-#### Linkage voor metadata van **services**
+##### Linkage voor metadata van **services**
 
 -   **WMS**: We raden aan om deze URL's in de linkage op te nemen:
     -   GetCapabilities-operatie
@@ -1213,7 +1213,7 @@ De combinatie van de URL (ISO element 397), het protocol dat je daarmee onderste
 -   **WCS**: We raden aan om deze URL's in de linkage op te nemen:
     -   GetCapabilities-operatie
 
-### protocol (ISO element 398)
+#### protocol (ISO element 398)
 
 Dit element is optioneel, maar het is aanbevolen om het element best op te nemen, zodat je het protocol van de linkage kan beschrijven. Alleen op die manier zal jouw data / service ook zichtbaar gemaakt kunnen worden via de knop 'Bekijk op kaart' in de Geopunt-Catalogus; of zal jouw data automatisch gedownload kunnen worden vanuit de Geopunt-Catalogus.
 
@@ -1297,9 +1297,9 @@ De protocollen die momenteel ondersteund worden in de **Geopunt-productdetailpag
 
 Voorwaarde voor bovenstaande is uiteraard dat die data er ook effectief beschikbaar is en zijn URL opgenomen is onder 4.30.1.
 
-### name (ISO element 400)
+#### name (ISO element 400)
 
-#### Name voor metadata van **datasets**, die ook via een service ontsloten worden
+##### Name voor metadata van **datasets**, die ook via een service ontsloten worden
 
 -   **WMS**: We raden aan om de name zo in te vullen:
     -   Voor de GetCapabilities-operatie: Name = Titel (Title) van de Service (uit Capabilities)
@@ -1314,7 +1314,7 @@ Voorwaarde voor bovenstaande is uiteraard dat die data er ook effectief beschikb
     -   Voor de GetCapabilities-operatie: Name = Titel (Title) van de Service (uit Capabilities)
     -   Voor de GetCoverage-operatie, per coveragesummary: Name = Naam coveragesummary in de Service
 
-#### Name voor metadata van services
+##### Name voor metadata van services
 
 We raden aan om de name zo in te vullen:
 
@@ -1322,9 +1322,9 @@ Capabilities van de webdienst \<Titel van de respectievelijke webdienst\>
 
 Bijvoorbeeld: Capabilities van de webdienst WMS Universiteit Gent
 
-### description (ISO element 401)
+#### description (ISO element 401)
 
-#### Description voor metadata van **datasets**, die ook via een service ontsloten worden
+##### Description voor metadata van **datasets**, die ook via een service ontsloten worden
 
 -   **WMS**: We raden aan om de description zo in te vullen:
     -   Voor de GetCapabilities-operatie: Description = Abstract van de Service (uit Capabilities)
@@ -1339,7 +1339,7 @@ Bijvoorbeeld: Capabilities van de webdienst WMS Universiteit Gent
     -   Voor de GetCapabilities-operatie: Description = Abstract van de Service (uit Capabilities)
     -   Voor de GetCoverage-operatie, per coveragesummary: Description = Titel coveragesummary in de Service
 
-#### Description voor metadata van **services**
+##### Description voor metadata van **services**
 
 We raden aan om de description zo in te vullen:
 
@@ -1347,7 +1347,7 @@ We raden aan om de description zo in te vullen:
 <gmx:Anchor xlink:href="https://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">access point</gmx:Anchor>
 ```
 
-### function (ISO element 402)
+#### function (ISO element 402)
 
 Dit element is optioneel. Het geeft net zoals het protocol element (zie 4.30.2) extra informatie over de URL die in het linkage element (zie 4.30.1) is opgenomen. Echter verwacht INSPIRE in sommige metadatarecords dat dit veld is ingevuld.
 
@@ -1357,7 +1357,7 @@ We raden aan om de waarde van function op 'informatie' te zetten:
 <gmd:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/> 
 ```
 
-### Voorbeelden van concrete implementatie voor de OnLine bronnen in de distributie-informatie van de beschrijving van een dataset, ontsloten via een WMS, WMTS en WFS
+#### Voorbeelden van concrete implementatie voor de OnLine bronnen in de distributie-informatie van de beschrijving van een dataset, ontsloten via een WMS, WMTS en WFS
 
 Bijvoorbeeld:
 
@@ -1380,7 +1380,7 @@ Metadatarecord van een dataset:
 
 Samengevat in volgende drie tabellen, wordt het distributieluik voor OnLine bronnen in Overdracht zo ingevuld voor de dataset 'Vlaamse Hydrografische Atlas - Zones, 1 maart 2017':
 
-#### Dataset ontsloten als WMS
+##### Dataset ontsloten als WMS
 
 | WMS             | Linkage                                                                                                                                                                                                                                                                                               | Protocol  <br>(in XML)               | Name                             | Description                                                 |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | -------------------------------- | ----------------------------------------------------------- |
@@ -1391,7 +1391,7 @@ Samengevat in volgende drie tabellen, wordt het distributieluik voor OnLine bron
 | GetMap          | https://geoservices.informatievlaanderen.be/raadpleegdiensten/VMM/wms?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=TRUE&STYLES=default&VERSION=1.3.0&LAYERS=VHADeelbek&WIDTH=1920&HEIGHT=695&CRS=EPSG:3857&BBOX=176481.8113850644,6531252.530683656,763518.1886149356,6743747.469316344    | OGC:WMS\-1.3.0-http-get-map          | VHADeelbek                       | VHA-deelbekkens                                             |
 
 
-#### Dataset ontsloten als WFS
+##### Dataset ontsloten als WFS
 
 | WFS             | Linkage                                                                                                                                                       | Protocol  <br>(in XML)               | Name                                           | Description                                                          |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------- | -------------------------------------------------------------------- |
@@ -1400,9 +1400,9 @@ Samengevat in volgende drie tabellen, wordt het distributieluik voor OnLine bron
 | GetFeature      | https://geoservices.informatievlaanderen.be/overdrachtdiensten/VHAZones/wfs?service=WFS&version=2.0.0&request=GetFeature&typename=VHAZones:Bekken&count=1     | OGC:WFS\-2.0.0-http-get-feature      | VHAZones:Bekken                                | VHA-bekken                                                           |
 | GetFeature      | https://geoservices.informatievlaanderen.be/overdrachtdiensten/VHAZones/wfs?service=WFS&version=2.0.0&request=GetFeature&typename=VHAZones:Deelbekken&count=1 | OGC:WFS\-2.0.0-http-get-feature      | VHAZones:Deelbekken                            | VHA-deelbekken                                                       |
 
-### Voorbeelden van concrete implementatie voor de OnLine bronnen in de distributie-informatie van de beschrijving van een WMS-, WMTS-, WFS- en WCS-service
+#### Voorbeelden van concrete implementatie voor de OnLine bronnen in de distributie-informatie van de beschrijving van een WMS-, WMTS-, WFS- en WCS-service
 
-#### WMS
+##### WMS
 
 De service is 'WMS Vlaamse Milieumaatschappij'.
 
@@ -1411,7 +1411,7 @@ De service is 'WMS Vlaamse Milieumaatschappij'.
 | GetCapabilities | https://geoservices.informatievlaanderen.be/raadpleegdiensten/VMM/wms?service=WMS&version=1.3.0&request=GetCapabilities | OGC:WMS                | Capabilities van de webdienst WMS Vlaamse Milieumaatschappij | access point |
 
 
-#### WMTS
+##### WMTS
 
 De service is 'agentschap Informatie Vlaanderen WMTS service'.
 
@@ -1420,7 +1420,7 @@ De service is 'agentschap Informatie Vlaanderen WMTS service'.
 | GetCapabilities | https://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?service=WMTS&version=1.0.0&request=GetCapabilities | OGC:WMTS               | Capabilities van de webdienst agentschap Informatie Vlaanderen WMTS service | access point |
 
 
-#### WFS
+##### WFS
 
 De service is 'WFS Vlaamse Hydrografische Atlas - Zones'.
 
@@ -1429,7 +1429,7 @@ De service is 'WFS Vlaamse Hydrografische Atlas - Zones'.
 | GetCapabilities | https://geoservices.informatievlaanderen.be/overdrachtdiensten/VHAZones/wfs?service=WFS&request=getcapabilities&version=2.0.0 | OGC:WFS                | Capabilities van de webdienst WFS Vlaamse Hydrografische Atlas - Zones | access point |
 
 
-## dataQualityInfo (ISO element 18, 78, 79, 138, 139, 80, 99, 110/117/125/113, 101, 208, 207, 208, 102, 106, 107, 128, 129, 130, 359, 360, 361, 362, 393, 394, 395, 131, 132, 133, 135, 137)
+### dataQualityInfo (ISO element 18, 78, 79, 138, 139, 80, 99, 110/117/125/113, 101, 208, 207, 208, 102, 106, 107, 128, 129, 130, 359, 360, 361, 362, 393, 394, 395, 131, 132, 133, 135, 137)
 
 Dit element is optioneel voor de ISO-standaard, maar wordt voor INSPIRE-datasets wel opgelegd, omdat er minstens een "conformiteit ten aanzien van de INSPIRE-verordening" verwacht wordt en dit via de datakwaliteitsinformatie beschreven wordt.
 
@@ -1443,17 +1443,17 @@ Verschillende kwaliteits- en kwantiteitscontroles kunnen beschreven worden onder
 
 Resultaten van metingen/controles moeten steeds ingevuld worden via een "kwaliteitsrapport".
 
-### Conformiteit ten aanzien van INSPIRE, via het element DQ_ConformanceResult
+#### Conformiteit ten aanzien van INSPIRE, via het element DQ_ConformanceResult
 
 Minstens de conformiteit ten aanzien van de INSPIRE-verordening is verplicht op te nemen, extra conformiteiten beschrijven kan ook, maar is optioneel.
 
 Wel is het zo dat je per conformiteit steeds de specificatie zelf (zie 4.31.1.1) moet meegeven waartegen je je conformiteit toetst, de uitleg die je er extra bij geeft (zie 4.31.1.3) en of het al dan niet conform (zie 4.31.1.2) is.
 
-#### specification (element 130)
+##### specification (element 130)
 
 Je kunt uniek naar een specificatie verwijzen via de combinatie van zijn titel, zijn datum en datumType. Zo kan je in je resultaat verklaren tegen welke specificatie je de dataset of service al dan niet conform verklaart en waarom.
 
-#### title (ISO element 360) {#title-iso-element-360-2 .Kop_Extra}
+##### title (ISO element 360) {#title-iso-element-360-2 .Kop_Extra}
 
 Geef de specificatie weer in een officiële taal uit de Europese Unie.
 
@@ -1476,19 +1476,19 @@ Opgelet:
 -   INSPIRE-conforme metadata **≠** INSPIRE-conforme data
 -   INSPIRE-conforme service **≠** INSPIRE-conforme data
 
-#### date (ISO element 394) {#date-iso-element-394-1 .Kop_Extra}
+##### date (ISO element 394) {#date-iso-element-394-1 .Kop_Extra}
 
 De specificatie datum hangt samen met de specificatie waartegen je valideert. Je vult er best de publicatiedatum van de specificatie in.
 
-#### dateType (ISO element 395) {#datetype-iso-element-395-1 .Kop_Extra}
+##### dateType (ISO element 395) {#datetype-iso-element-395-1 .Kop_Extra}
 
 Het specificatie datumtype hangt eveneens samen met de specificatie waartegen je valideert. Er is keuze tussen een creatie-, publicatie-, of revisiedatum. Je vult er best het datumtype 'publicatie' in.
 
-#### explanation (ISO element 131)
+##### explanation (ISO element 131)
 
 Een element om extra uitleg toe te voegen bij het al dan niet volledig voldoen aan de specificatie.
 
-#### pass (ISO element 132) 
+##### pass (ISO element 132) 
 
 Er zijn drie mogelijke indicaties om de conformiteit van het resultaat aan te geven:
 
@@ -1496,25 +1496,25 @@ Er zijn drie mogelijke indicaties om de conformiteit van het resultaat aan te ge
 -   Niet conform (pass=false)
 -   Niet geëvalueerd (nilReason="unknown")
 
-#### ETF-validator
+##### ETF-validator
 
 [In de ETF-validator](http://inspire.jrc.ec.europa.eu/events/conferences/inspire_2012/presentations/222.pdf) kan je jouw data, services of metadata gaan testen.
 
 Link: <https://inspire.ec.europa.eu/validator/about/>?
 
-#### Voorbeeld metadata van conforme data
+##### Voorbeeld metadata van conforme data
 
 Op het INSPIRE Geoportal kan je voorbeelden vinden van conforme data.
 
 Link: <https://inspire-geoportal.ec.europa.eu/>
 
-## Statement LI_Lineage (ISO element 83)
+### Statement LI_Lineage (ISO element 83)
 
 Zoals beschreven in de basislogica is het goed om per update van je gegevens een beschrijving van de verandering toe te voegen, samen met de versie (Edition) waar het over gaat. Zo kan een gebruiker heel makkelijk de evolutie van de gegevens volgen, alsook zien wat er precies veranderd is van één versie naar een andere.
 
-# Best Practices - Uitleg per element: ISO 19119 (Service)
+## Best Practices - Uitleg per element: ISO 19119 (Service)
 
-## serviceType
+### serviceType
 
 Dit element bevat het type van de service.
 
@@ -1524,39 +1524,39 @@ Bijvoorbeeld: serviceType = view
 
 Tip: Per metadatarecord kan slechts één serviceType opgenomen worden. Als je een WMS én een WFS wil beschrijven, moet dit gebeuren in twee aparte metadatarecords.
 
-## coupledResource
+### coupledResource
 
 Dit element geeft informatie (metadata) over de data die in de service beschikbaar wordt gesteld.
 
 Echter sinds versie 2.0 van de INSPIRE Metadata Technical Guidelines wordt dit element niet meer verwacht en hoeft het niet meer ingevuld te worden.
 
-## couplingType
+### couplingType
 
 Dit element is verplicht volgens het amendement op ISO 19119. Het definieert het type koppeling tussen een service instance en een dataset. De mogelijke waarden zijn vastgelegd in de codelist 'SV_CouplingType'.
 
 De default-waarde is 'tight'.
 
-## containsOperations
+### containsOperations
 
 Dit metadata-element is verplicht en beschrijft de operaties die de service kan uitvoeren. Per mogelijke operatie wordt dit element opgenomen.
 
-### operationName
+#### operationName
 
 Dit element bevat de naam van de operatie die deze service ondersteunt. De attribuutwaarde kan als default door de applicatie of handmatig worden toegevoegd.
 
 Bijvoorbeeld: GetMap
 
-### DCP
+#### DCP
 
 Dit element bevat het Distributed Computing Platform, of de verdeelde computerplatformen waarop de operatie geïmplementeerd is. Deze waarde is opgenomen in de codelijst 'DCPList'.
 
 Bijvoorbeeld: `HTTP`
 
-### connectPoint
+#### connectPoint
 
 Via het element linkage onder connectPoint wordt de locatie (via een URL) weergegeven voor de on-line toegang.
 
-## operatesOn
+### operatesOn
 
 Voorziet de informatie (via een metadatalink) over de dataset(s) waarop de service werkt. Bijvoorbeeld:
 
@@ -1564,102 +1564,102 @@ Voorziet de informatie (via een metadatalink) over de dataset(s) waarop de servi
 <srv:operatesOn xlink:href="https://metadata.vlaanderen.be/metadatacenter/srv/dut/csw?request=GetRecordById&service=CSW&constraintLanguage=CQL_TEXT&version=2.0.2&resultType=results&ElementSetName=full&typenames=csw:Record&id=a106284c-97f8-4533-ba3b-38d9e4deea2d&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd" uuidref="995a09ad-ed36-4b3a-b527-76a26ba7f677"/>
 ```
 
-# Best Practices - Uitleg per element: ISO 19110 (Objectencatalogus)
+## Best Practices - Uitleg per element: ISO 19110 (Objectencatalogus)
 
-## FC_FeatureCatalogue (ISO element 1)
+### FC_FeatureCatalogue (ISO element 1)
 
-### Attribute name (ISO element 1.1)
+#### Attribute name (ISO element 1.1)
 
 Beschrijf via dit verplichte element de naam van de objectencatalogus.  Dezelfde regels als voor de titel van een dataset(serie)/service gaan hier op (zie 4.12).
 
-### Attribute versionNumber (ISO element 1.4)
+#### Attribute versionNumber (ISO element 1.4)
 
 Beschrijf via dit verplichte element de versie van de objectencatalogus.  Dezelfde regels als voor de versie van een dataset(serie)/service gaan hier op (zie 4.13).
 
-### Attribute versionDate (ISO element 1.5)
+#### Attribute versionDate (ISO element 1.5)
 
 Beschrijf via dit verplichte element de versiedatum van de objectencatalogus.
 
-### Attribute producer (ISO element 1.6)
+#### Attribute producer (ISO element 1.6)
 
 Beschrijf via dit verplichte element de producent van de objectencatalogus.
 
-### Role featureType (ISO element 1.8)
+#### Role featureType (ISO element 1.8)
 
 Beschrijf via dit verplichte element de link naar de entiteiten/attributen/codelijsten die de objectencatalogus bevat. Dit element kan uiteraard meerdere keren voorkomen, volgens het aantal entiteiten/attributen/codelijsten dat beschreven moet worden binnen de objectencatalogus.
 
-## FC_FeatureType (ISO element 2)
+### FC_FeatureType (ISO element 2)
 
-### Attribute typeName (ISO element 2.1)
+#### Attribute typeName (ISO element 2.1)
 
 Beschrijf via dit verplichte element de naam van de entiteit/attribuut/codelijst. De naam moet echter uniek zijn over de gehele objectencatalogus.
 
-### Attribute definition (ISO element 2.2)
+#### Attribute definition (ISO element 2.2)
 
 Beschrijf via dit voorwaardelijke (conditionele) element de definitie van de entiteit/attribuut/codelijst in een natuurlijke taal.
 
-### Attribute code (ISO element 2.3)
+#### Attribute code (ISO element 2.3)
 
 Beschrijf via dit optionele element de code van de entiteit/attribuut/codelijst. Dit moet echter uniek zijn over de gehele objectencatalogus.
 
-### Attribute isAbstract (ISO element 2.4)
+#### Attribute isAbstract (ISO element 2.4)
 
 Dit verplichte element geeft weer of de entiteit/attribuut/codelijst abstract is al dan niet.
 
-### Attribute aliases (ISO element 2.5)
+#### Attribute aliases (ISO element 2.5)
 
 Beschrijf via dit optionele element de aliasnaam, de equivalente naam van de entiteit/attribuut/codelijst.
 
-### Role featureCatalogue (ISO element 2.8)
+#### Role featureCatalogue (ISO element 2.8)
 
 Beschrijf via dit verplichte element de link van deze entiteit/attribuut/codelijst naar de objectencatalogus die deze bevat.
 
-### Role carrierOfCharachteristics (ISO element 2.9)
+#### Role carrierOfCharachteristics (ISO element 2.9)
 
 Beschrijf via dit optionele element de link van deze entiteit/attribuut/codelijst naar de attributen (propertyTypes) die ze bevat.
 
-## FC_PropertyType (ISO element 4)
+### FC_PropertyType (ISO element 4)
 
-### Attribute memberName (ISO element 4.1)
+#### Attribute memberName (ISO element 4.1)
 
 Beschrijf via dit verplichte element de naam van het attribuut binnen de entiteit/attribuut/codelijst.
 
-### Attribute definition (ISO element 4.2)
+#### Attribute definition (ISO element 4.2)
 
 Beschrijf via dit voorwaardelijke (conditionele) element de definitie van het attribuut in een natuurlijke taal.
 
-### Attribute cardinality (ISO element 4.3)
+#### Attribute cardinality (ISO element 4.3)
 
 Dit verplichte element geeft de cardinaliteit van het attribuut weer via een minimale en maximale cardinaliteit. Vaak is de waarde 0-1.
 
-## FC_FeatureAttribute (ISO element 8)
+### FC_FeatureAttribute (ISO element 8)
 
-### Attribute code (ISO element 8.1)
+#### Attribute code (ISO element 8.1)
 
 Beschrijf via dit verplichte element de code van het attribuut. De code moet echter uniek zijn over de gehele objectencatalogus.
 
-### Attribute listedValue (ISO element 8.3)
+#### Attribute listedValue (ISO element 8.3)
 
 Beschrijf via dit voorwaardelijke (conditionele) element het domein van het attribuut. Als dit element aanwezig is, dan is er een enumeratie voorzien (bijvoorbeeld een codelijst). Als dit element niet aanwezig is, dan is er geen enumeratie voor dit attribuut beschikbaar.
 
-### Attribute valueType (ISO element 8.4)
+#### Attribute valueType (ISO element 8.4)
 
 Beschrijf via dit voorwaardelijke (conditionele) element het type van het attribuut. Er is een lijst met aangeboden waarden om uit te kiezen.
 
-## FC_ListedValue (ISO element 11)
+### FC_ListedValue (ISO element 11)
 
-### Attribute label (ISO element 11.1)
+#### Attribute label (ISO element 11.1)
 
 Beschrijf via dit verplichte element de domeinwaarde van het domein. Dit moet een beschrijvend label zijn dat de waarde uniek beschrijft over het gehele attribuut.
 
-### Attribute code (ISO element 11.2)
+#### Attribute code (ISO element 11.2)
 
 Beschrijf via dit optionele element de domeincode van het domein. Dit kan een numerieke of alfanumerieke code zijn, dat opnieuw de waarde uniek beschrijft over het gehele attribuut.
 
-### Attribute definition (ISO element 11.3)
+#### Attribute definition (ISO element 11.3)
 
 Beschrijf via dit optionele element de domeindefinitie van het domein, in een natuurlijke taal.
 
-# References
+## References
 
 - [Origineel document](https://vlaamseoverheid.sharepoint.com/:w:/r/sites/aiv/Infocat/_layouts/15/Doc.aspx?sourcedoc=%7BAA8E3450-8A2B-47FE-BD34-A04FFCB3E6A9%7D&file=GDI_Vl_BestPractices_v0_18.docx&action=default&mobileredirect=true&DefaultItemOpen=1)

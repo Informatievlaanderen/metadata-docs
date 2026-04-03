@@ -93,9 +93,7 @@ Deze richtlijn vervangt:
 -   De "Richtlijn voor de uitwisseling van metadata, versie 1.0 van het GDI-Vlaanderen Best Practices-document voor Metadata", van 18 november 2013.
 -   Het "Technisch GDI-Vlaanderen voorschrift voor Metadata v3", van 7 juni 2011.
 
-Alle documenten van de GDI-Vlaanderen Best Practices voor Metadata v2.0 vind je ook terug op de metadata-webpagina van Informatie Vlaanderen.
-
-Alle informatie om metadata van Vlaamse Open data te beschrijven, blijft apart gebundeld buiten dit document om.
+Alle documenten van de GDI-Vlaanderen Best Practices voor Metadata v2.0 vind je ook terug op de metadata-webpagina van Informatie Vlaanderen. Alle informatie om metadata van Vlaamse Open data te beschrijven, blijft apart gebundeld buiten dit document om.
 
 Aan de hand van het applicatieprofiel "DCAT Application Profile for data portals in Europe", afgekort DCAT-AP, kan meta-informatie op een eenduidige wijze uitgewisseld worden tussen Open Data catalogi in Europa. DCAT-AP Vlaanderen (DCAT-AP VL) is een specialisatie (geen uitbreiding) van DCAT-AP. Met DCAT-AP VL kan een trapsgewijze aggregatie van de inhoud van Vlaamse Open Data Catalogi gerealiseerd worden zodat de informatie beschikbaar op lokaal of Vlaams niveau ook gevonden kan worden op het federale en Europese niveau. Het stuurorgaan voor het Vlaams Informatie- en ICT-beleid heeft op 3 oktober 2019 DCAT-AP VL erkend als een vrijwillig toe te passen standaard.
 
@@ -109,7 +107,7 @@ Alle beschikbare documenten over [DCAT-AP VL](applicatieprofielen/dcatapvl2) vin
 
 In dit document is extra uitleg te vinden voor elementen die meer uitleg nodig hebben, of op een bepaalde manier ingevuld moeten worden.
 
-Dit document bevat alle "best practices" -- op vraag van de gebruikers-editoren -- rond metadata van datasets, datasetseries, services en objectencatalogi in het Geografische domein. Je kunt het document best samen lezen met de desbetreffende invulinstructies.
+Dit document bevat alle "best practices" - op vraag van de gebruikers-editoren - rond metadata van datasets, datasetseries, services en objectencatalogi in het Geografische domein. Je kunt het document best samen lezen met de desbetreffende invulinstructies.
 
 Het eerste onderdeel bevat een inleiding met algemene informatie over metadata en objectencatalogi, een tweede onderdeel vertelt je alle generieke informatie die je als achtergrond moet hebben, alvorens aan het editeren te kunnen beginnen. Het derde en laatste onderdeel bevat alle specifieke informatie, de 'Best Practices', of dus de tips, trucks, aanbevelingen en voorbeelden, element per element; weliswaar opgesplitst per ISO-norm voor de duidelijkheid.
 
@@ -117,13 +115,13 @@ Het eerste onderdeel bevat een inleiding met algemene informatie over metadata e
 
 ## Achtergrond
 
-GIS-Vlaanderen heeft in 1996 -- in afwachting van een ISO-norm -- gekozen om metadata op te bouwen volgens een Europese (pre-)norm voor metadata (CEN prEN 27009). Het voormalige AGIV, thans opgegaan in Informatie Vlaanderen, heeft deze norm geïmplementeerd in SPIDI.
+GIS-Vlaanderen heeft in 1996 - in afwachting van een ISO-norm - gekozen om metadata op te bouwen volgens een Europese (pre-)norm voor metadata (CEN prEN 27009). Het voormalige AGIV, thans opgegaan in Informatie Vlaanderen, heeft deze norm geïmplementeerd in SPIDI.
 
 Ondertussen is de ISO-norm voor metadata (ISO 19115:2003) gepubliceerd.  Deze ISO standaard wordt internationaal en binnen vrijwel alle Europese landen gebruikt en is ook door INSPIRE als de metadatastandaard aangewezen. INSPIRE is bindend binnen de Europese gemeenschap als implementatie omtrent geografische gegevens en dus ook de gerelateerde metadata.
 
 Het voormalige Agentschap voor Geografische Informatie Vlaanderen (AGIV) moest zich daarom richten naar deze ISO norm. Om de bestaande metadata te recupereren is een omzetting gebeurd van CEN prEN 27009 naar ISO 19115:2003. De ISO-norm bestaat uit meer dan 400 in te vullen elementen voor datasets en datasetseries, waardoor het aangewezen is opnieuw te werken met een kernset (van verplicht in te vullen velden) en een optionele set voor metadata.
 
-Het allereerste document werd op 23 maart 2011 op de Stuurgroep GDI-Vlaanderen goedgekeurd, waardoor dit document "Vlaamse metadatastandaard voor geografie -- GDI-Vlaanderen metadataprofiel" integraal een Aanbeveling GDI-Vlaanderen is geworden.
+Het allereerste document werd op 23 maart 2011 op de Stuurgroep GDI-Vlaanderen goedgekeurd, waardoor dit document "Vlaamse metadatastandaard voor geografie - GDI-Vlaanderen metadataprofiel" integraal een Aanbeveling GDI-Vlaanderen is geworden.
 
 Op basis van de ervaring sinds 1996 en rekening houdend met zowel de oude als de nieuwe implementatie werd een Best Practices-richtlijn opgesteld. Het reeds bestaande profiel, het "Technisch GDI-Vlaanderen voorschrift voor Metadata v3" van 7 juni 2011 en een mapping naar de nieuwe ISO-norm werden gebruikt om te komen tot de "Richtlijn voor de uitwisseling van metadata, versie 1.0 van het GDI-Vlaanderen Best Practices-document voor Metadata" van 18 november 2013 die voldeed aan de toenmalige eisen die gesteld werden door INSPIRE en je aangeeft hoe je best met elk van de elementen om gaat.
 
@@ -155,7 +153,7 @@ Wanneer metadatarecords worden opgeslagen in een te bevragen systeem ontstaat er
 
 Een objectencatalogus definieert het datamodel, zijnde alle types van objecten, hun operaties, hun attributen, en hun associaties in geografische data, zodat data in bruikbare informatie kan worden omgezet. Een objectencatalogus bevordert het verspreiden, het delen, en het gebruik maken van geografische data door het beter begrijpen van de inhoud en de betekenis van die data.
 
-Een catalogus kan nooit de rijkdom van de geografische realiteit volledig bevatten. Maar zou wel de zekere abstractie -- weergegeven in een dataset -- zo klaar en duidelijk mogelijk, zo precies mogelijk en in een zo verstaanbaar mogelijke en toegankelijke vorm moeten weergeven voor de gebruikers van de data.
+Een catalogus kan nooit de rijkdom van de geografische realiteit volledig bevatten. Maar zou wel de zekere abstractie - weergegeven in een dataset - zo klaar en duidelijk mogelijk, zo precies mogelijk en in een zo verstaanbaar mogelijke en toegankelijke vorm moeten weergeven voor de gebruikers van de data.
 
 Er zijn twee niveaus van geografische objecten (*geographic features*).  De eerste soort objecten (*feature* *instances*) beschrijft discrete fenomenen, die worden geassocieerd met hun geografische en temporele coördinaten en kunnen voorgesteld worden door specifieke geografische symbolen. De tweede soort objecten (*feature types*) beschrijft de groepering van de eerste soort objecten in klasses met gemeenschappelijke kenmerken.
 
@@ -363,7 +361,7 @@ Alle beschikbare documenten over DCAT-AP VL vind je op onze webpagina's:
 
 # Wat je nog moet weten
 
-## Versiebeheer: algemene uitleg -- basislogica voor geografische gegevens
+## Versiebeheer: algemene uitleg - basislogica voor geografische gegevens
 
 Alvorens te starten met editeren, zijn er enkele basisprincipes die uitgelegd moeten worden.
 
@@ -525,7 +523,7 @@ Dit sluit niet uit dat wanneer de vraag naar meertaligheid in de toekomst opgele
 
 ## Verwante datasets vs. datasetseries vs. datasets
 
-### Dataset -- ISO 19115:2003 definitie 
+### Dataset - ISO 19115:2003 definitie 
 
 Identificeerbare collectie van data (ISO 34 2002)
 
@@ -533,7 +531,7 @@ OPMERKING: Een dataset mag een kleinere groep van data zijn, gelimiteerd door be
 
 De Vlaamse metadatastandaard voor geografie gaat niet uit van het type datasets zoals theoretisch beschreven kan worden.
 
-### Datasetserie -- ISO 19115:2003 definitie
+### Datasetserie - ISO 19115:2003 definitie
 
 Verzameling van datasets met dezelfde productspecificaties (ISO 47 2003)
 
@@ -545,7 +543,7 @@ Volgens ISO 19115:2003 worden de horizontale relaties tussen datasets vastgelegd
 
 Nederland neemt net zoals Vlaanderen enkel de 'crossReference' als type van relatie op, waarbij verwante datasets dus duiden op een referentie van de ene dataset naar een andere. (Van de verwante dataset(s) worden altijd de titel en datum ingevoerd.)
 
-### FIGUUR: 'dataset' -- 'datasetserie' -- 'verwante datasets'
+### FIGUUR: 'dataset' - 'datasetserie' - 'verwante datasets'
 
 verwante datasets
 
@@ -559,7 +557,7 @@ DATASET X
 
 Figuur 1: Interactie tussen de begrippen dataset, datasetserie en verwante dataset
 
-## Verschil template DS -- DSS 
+## Verschil template DS - DSS 
 
 ### Hoe maak je metadata van een datasetserie?
 
@@ -592,11 +590,11 @@ In de tool GeoNetwork kan je via het rechterpaneel een link toevoegen:
 
 En vervolgens kies je de correcte dataset(serie) uit de gepubliceerde metadatarecords die in de catalogus aanwezig zijn. Deze link wordt enkel in de catalogus gelegd, hierdoor wordt deze link niet weggeschreven in de XML van de metadatarecord zelf.
 
-# Best Practices -- Uitleg per element: ISO 19115 (Datasets / Datasetseries)
+# Best Practices - Uitleg per element: ISO 19115 (Datasets / Datasetseries)
 
 ## fileIdentifier (ISO element 2) 
 
-Dit element bevat de waarde die een metadatarecord uniek identificeert.  In de ISO 19115 (Geographic Information -- Metadata) wordt deze identificerende sleutel (identifier) als tekenreeks gedefinieerd (/gmd:fileIdentifier/gco:CharacterString). Geadviseerd wordt om gebruik te maken van een betekenisloze identifier zoals een Universal Unique Identifier (UUID, <http://en.wikipedia.org/wiki/UUID>) of een Uniform Resource Identifier (URI, <http://nl.wikipedia.org/wiki/Uniform_Resource_Identifier>) om de uniciteit van de sleutel te garanderen.
+Dit element bevat de waarde die een metadatarecord uniek identificeert.  In de ISO 19115 (Geographic Information - Metadata) wordt deze identificerende sleutel (identifier) als tekenreeks gedefinieerd (/gmd:fileIdentifier/gco:CharacterString). Geadviseerd wordt om gebruik te maken van een betekenisloze identifier zoals een Universal Unique Identifier (UUID, <http://en.wikipedia.org/wiki/UUID>) of een Uniform Resource Identifier (URI, <http://nl.wikipedia.org/wiki/Uniform_Resource_Identifier>) om de uniciteit van de sleutel te garanderen.
 
 Bijvoorbeeld: 17e50f84-5882-40d9-b0ed-7e062d9d26ac (UUID)
 
@@ -847,7 +845,7 @@ Tip: merk op dat in de nieuwe versie van de tool GeoNetwork de voorbeeldweergave
 
 Trefwoorden zijn algemene begrippen die een dataset(serie)/service beschrijven en vooral te bevragen maken. Hoe beter je de trefwoorden kiest, hoe eenvoudiger een gebruiker de best geschikte dataset(serie)/service vindt die hij zoekt.
 
-Je kunt naast losse eigen trefwoorden ook trefwoorden uit een thesaurus gaan opnemen. Sowieso moet voor INSPIRE-datasets minimaal één trefwoord uit de thesaurus "GEMET -- INSPIRE themes" en één trefwoord uit de thesaurus "GEMET -- Concepten" worden toegevoegd. Prioritaire datasets moeten voor INSPIRE het betreffende trefwoord uit de thesaurus "INSPIRE priority data set" opnemen, in functie van correcte monitoring en rapportering bij Europa.
+Je kunt naast losse eigen trefwoorden ook trefwoorden uit een thesaurus gaan opnemen. Sowieso moet voor INSPIRE-datasets minimaal één trefwoord uit de thesaurus "GEMET - INSPIRE themes" en één trefwoord uit de thesaurus "GEMET - Concepten" worden toegevoegd. Prioritaire datasets moeten voor INSPIRE het betreffende trefwoord uit de thesaurus "INSPIRE priority data set" opnemen, in functie van correcte monitoring en rapportering bij Europa.
 
 Net zoals ook een trefwoord uit de thesaurus "Spatial scope" gekozen moet worden voor die INSPIRE monitoring en rapportering. In Vlaanderen kunnen we de datasets quasi default op het Spatial scope trefwoord 'regionaal' indelen. De thesaurus "Vlaamse Regio's" is soortgelijk en kan in de meeste gevallen quasi default met 'Vlaams Gewest' worden ingevuld.
 
@@ -928,7 +926,7 @@ Dit trefwoord dien je zelf te voorzien, uit de Trefwoordkiezer aan te duiden, al
 
 Een voorbeeld in XML van het INSPIRE-thema "Gebiedsbeheer, gebieden waar beperkingen gelden, gereguleerde gebieden en rapportage-eenheden" voor het implementeren met "Anchor"-elementen:
 
-#### GEMET - Concepten, versie 2.4 -- thesaurus 
+#### GEMET - Concepten, versie 2.4 - thesaurus 
 
 Voor INSPIRE-dataset(serie)s moet tenminste één trefwoord uit de GEMET-thesaurus met de INSPIRE-concepten (<http://www.eionet.europa.eu/gemet/>), in de exacte notatie (met ev.  spelfouten en hoofdletters waar toegepast).
 
@@ -1365,8 +1363,8 @@ Bijvoorbeeld:
 
 Metadatarecord van een dataset:
 
-- De dataset is 'Vlaamse Hydrografische Atlas -- Zones, 1 maart 2017'.
-- Die dataset is als laag opgenomen in de service 'WMS Vlaamse Milieumaatschappij' en 'WFS Vlaamse Hydrografische Atlas -- Zones'.
+- De dataset is 'Vlaamse Hydrografische Atlas - Zones, 1 maart 2017'.
+- Die dataset is als laag opgenomen in de service 'WMS Vlaamse Milieumaatschappij' en 'WFS Vlaamse Hydrografische Atlas - Zones'.
 -  De dataset bestaat zelf uit vier entiteiten:
     -   VHA-zones
     -   VHA-bekkens
@@ -1376,11 +1374,11 @@ Metadatarecord van een dataset:
 -   Er zitten verschillende bronnen (lagen) in de WMS, bijvoorbeeld:
     -   Grenzen van polders, toestand 29/01/2016
     -   Risicozones voor overstromingen
-    -   Vlaamse Hydrografische Atlas -- Zones, 1 maart 2017
+    -   Vlaamse Hydrografische Atlas - Zones, 1 maart 2017
     -   ...
--   De WFS 'WFS Vlaamse Hydrografische Atlas -- Zones' waarin deze dataset ontsloten wordt, heeft als Service Naam (uit de URL) 'VHAZones'. In de WFS worden drie van de vier entiteiten als featuretype ontsloten.
+-   De WFS 'WFS Vlaamse Hydrografische Atlas - Zones' waarin deze dataset ontsloten wordt, heeft als Service Naam (uit de URL) 'VHAZones'. In de WFS worden drie van de vier entiteiten als featuretype ontsloten.
 
-Samengevat in volgende drie tabellen, wordt het distributieluik voor OnLine bronnen in Overdracht zo ingevuld voor de dataset 'Vlaamse Hydrografische Atlas -- Zones, 1 maart 2017':
+Samengevat in volgende drie tabellen, wordt het distributieluik voor OnLine bronnen in Overdracht zo ingevuld voor de dataset 'Vlaamse Hydrografische Atlas - Zones, 1 maart 2017':
 
 #### Dataset ontsloten als WMS
 
@@ -1471,7 +1469,7 @@ Een voorbeeld van hoe dit er in XML uitziet:
 
 Een verwijzing naar een onderdeel van de specificatie mag ook.
 
-Voorbeeld: INSPIRE Data Specification on Hydrography -- Technical Guidelines
+Voorbeeld: INSPIRE Data Specification on Hydrography - Technical Guidelines
 
 Opgelet:
 
@@ -1514,7 +1512,7 @@ Link: <https://inspire-geoportal.ec.europa.eu/>
 
 Zoals beschreven in de basislogica is het goed om per update van je gegevens een beschrijving van de verandering toe te voegen, samen met de versie (Edition) waar het over gaat. Zo kan een gebruiker heel makkelijk de evolutie van de gegevens volgen, alsook zien wat er precies veranderd is van één versie naar een andere.
 
-# Best Practices -- Uitleg per element: ISO 19119 (Service)
+# Best Practices - Uitleg per element: ISO 19119 (Service)
 
 ## serviceType
 
@@ -1566,7 +1564,7 @@ Voorziet de informatie (via een metadatalink) over de dataset(s) waarop de servi
 <srv:operatesOn xlink:href="https://metadata.vlaanderen.be/metadatacenter/srv/dut/csw?request=GetRecordById&service=CSW&constraintLanguage=CQL_TEXT&version=2.0.2&resultType=results&ElementSetName=full&typenames=csw:Record&id=a106284c-97f8-4533-ba3b-38d9e4deea2d&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd" uuidref="995a09ad-ed36-4b3a-b527-76a26ba7f677"/>
 ```
 
-# Best Practices -- Uitleg per element: ISO 19110 (Objectencatalogus)
+# Best Practices - Uitleg per element: ISO 19110 (Objectencatalogus)
 
 ## FC_FeatureCatalogue (ISO element 1)
 

@@ -71,11 +71,11 @@
 
 !!! contact
 
-    - Havenlaan 88, 1000 Brussel
-    - `+32 (0)2 553 72 02`
-    - Koningin Maria Hendrikaplein 70, 9000 Gent
-    - `+32 (0)9 276 15 00`
-    - <mailto:informatie.vlaanderen@vlaanderen.be>
+    Havenlaan 88, 1000 Brussel<br/>`+32 (0)2 553 72 02`
+
+    Koningin Maria Hendrikaplein 70, 9000 Gent<br/>`+32 (0)9 276 15 00`
+    
+    <mailto:informatie.vlaanderen@vlaanderen.be>
 
 Dit is de richtlijn voor de uitwisseling van metadata, versie 2.0 van het GDI-Vlaanderen Best Practices-document voor Metadata, die vanaf 16 november 2020 in voege is.
 

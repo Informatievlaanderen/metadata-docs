@@ -62,8 +62,10 @@ nav = [
             "minimale.effort.voor.datavindplaats.md",
         ] },
         { "Applicatieprofielen" = [
-            "applicatieprofielen.md",
-            "applicatieprofielen/dcatapvl.md",
+            "applicatieprofielen/index.md",
+            "applicatieprofielen/metadatadcat2.md",
+            "applicatieprofielen/dcatapvl2.md",
+            "applicatieprofielen/dcatapvl3.md",
         ] },
     ] },
     { "Architectuur" = [

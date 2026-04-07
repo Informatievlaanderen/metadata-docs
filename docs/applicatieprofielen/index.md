@@ -1,7 +1,3 @@
----
-icon: lucide/calendars
----
-
 # Applicatieprofielen
 
 Metadata Vlaanderen ondersteunt het beschrijven van metadatarecords en biedt hiertoe een reeks applicatieprofielen aan.

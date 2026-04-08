@@ -1,22 +1,21 @@
 ---
 title: Glossary
+icon: lucide/book-search
 ---
 
 # Glossary
 
-
 ## Algemeen
 
 **Metadata Vlaanderen**  
-Centrale Vlaamse voorziening voor het beschrijven, beheren en ontsluiten van metadata over datasets, dataservices en catalogi. Metadata Vlaanderen harvest en distribueert metadata naar o.a. Datavindplaats en de data strommd door naar [Belgische](data.gov.be) en [Europese portalen](https://data.europa.eu/) en [het INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/srv/dut/catalog.search#/home). Door het once-only principe worden dubbele beschrijvingen niet meer nodig. Daarvoor moeten de omschrijvingen vaste standarden volgen, die in de Editor gevalideerd worden. Daarvoor stellen wij gerichte sjabloonen ter beschikking.
+Centrale Vlaamse voorziening voor het beschrijven, beheren en ontsluiten van metadata over datasets, dataservices en catalogi volgens vaste metadata standaarden. Metadata Vlaanderen is een bron van metadata voor meerdere portalen zoals, e.g., [Datavindplaats](https://www.vlaanderen.be/datavindplaats), het [Belgische Data Portaal](data.gov.be), het [Europees data portaal](https://data.europa.eu/) en het [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/srv/dut/catalog.search#/home). Door het once-only principe worden dubbele beschrijvingen vermeden.
 
 **Metadatarecord**  
-Een beschrijving van een dataset, dataservice, datasetserie of catalogus, aangemaakt via een sjabloon (ISO of DCAT). Elk record doorloopt een workflow van ontwerp tot publicatie.  
+Een beschrijving van een dataset, dataservice, datasetserie of catalogus, aangemaakt via een sjabloon (ISO of DCAT). Elk record doorloopt een workflow gaande van ontwerp tot publicatie.
 
 **Sjabloon (template)**  
 Vooraf gedefinieerde structuur die bepaalt welke metadata-elementen beschikbaar en verplicht zijn (bv. ISO-dataset, DCAT-dataset, dataservice, (sub)catalogus).  zie de FAQ voor een keuze steun.
 
----
 
 ## Rollen & rechten
 
@@ -44,48 +43,46 @@ Context waarbinnen metadatarecords worden aangemaakt en beheerd. Rechten zijn ge
 **Contactinformatie**
 
 
----
-
 ## Workflow & statussen
 
 **Ontwerp**  
 Initiële status van een metadatarecord. Het record is zichtbaar voor de editor maar nog niet ingediend voor publicatie.  
 
 **Intern ingediend**  
-Status waarbij een editor het record ter beoordeling indient bij de hoofdeditor.  DEze kan een reocrd goedkeuren voor publicaties, depubliceren of verwijderen.
+Status waarbij een editor het record ter beoordeling indient bij de hoofdeditor.  Deze kan een record goedkeuren voor publicaties, depubliceren of verwijderen.
 
 **Gepubliceerd**  
-Status waarbij het record publiek zichtbaar is en kan worden geharvest door externe portalen zoals Datavindplaats.  
-Binnenkort kunnen records ook private gepubliceerd worden om een intern beheer van datatsets mogelijk te maken.
+Status waarbij het record publiek zichtbaar is en kan worden geharvest door externe portalen zoals Datavindplaats. Binnenkort kunnen records ook privaat gepubliceerd worden om intern beheer van datasets mogelijk te maken.
 
 **Historisch archief**  
 Status voor metadata van datasets of services die niet langer actueel zijn maar omwille van historiek raadpleegbaar blijven.  
----
+
 
 ## Recordtypes
 
 **Dataset**  
-Metadatarecord dat een gegevensverzameling beschrijft. Kan geografisch en INSPIRE gericht (volgens ISO-standarden) of geografisch/ niet-geografisch zijn (volgens DCAT- standarden) zijn.  
-Elk dataset heft een minimale geografische component, de decking  van de gegevens, zoals het Vlaams Gewest of een bepaalde gemeente.
+Metadatarecord dat een gegevensverzameling beschrijft. Kan geografisch en INSPIRE gericht (volgens ISO-standaarden) of geografisch/ niet-geografisch zijn (volgens DCAT standaarden) zijn.  
+Elk dataset heeft een minimale geografische component, de dekking  van de gegevens, zoals het Vlaams Gewest of een bepaalde gemeente.
 
 **Dataservice**  
-Metadatarecord dat een dienst beschrijft waarmee data geraadpleegd of opgevraagd kan worden (bv. API, downloadservice). Een Dataservice record wordt gelinked aan de Dataset record, die de service verdeelt maar heeft enkele eigene specificaties nodig.
+Metadatarecord dat een dienst beschrijft waarmee data geraadpleegd of opgevraagd kunnen worden (bv. API, downloadservice). Een dataservicerecord wordt gelinked aan het datasetrecord dat de service verdeelt en beschrijft daarbovenop een aantal eigen eigenschappen.
 
 **Datasetserie**  
-Samenhangende reeks datasets die variëren in tijd, versie of geografische afbakening, maar inhoudelijk vergelijkbaar zijn. In het verleden was dit alleen beschikbaar binnen de ISO-context maar sinds de schakeling naar DCAT-3 vocabularium kunnen ook DCAT-Series beschreven worden. 
+Samenhangende reeks datasets die variëren in tijd, versie of geografische afbakening, maar inhoudelijk vergelijkbaar zijn. In het verleden was dit alleen beschikbaar binnen de ISO-context maar sinds de omschakeling naar versie 3 van het DCAT vocabularium kunnen ook DCAT datasetseries beschreven worden. 
 
 **Subcatalogus**  
-*In oudere documentation soms ook 'virtuele catalogus'.*
-Recordtype dat een verzameling van metadatarecords groepeert. Wordt gebruikt om aanbod thematisch, organisatorisch of functioneel te structureren. Dit is een breder concept dan series en leidt tot een eigen subportal om data van een gelijke bron of thema in de kijker te zetten. Dit is aanbevolen voor alle verzamelingen die niet alleen versies doorheen de tijd of locatie van een zelfde concept weergeven.
+
+!!! info
+
+   In oudere documentation soms ook 'virtuele catalogus'.
+
+Recordtype dat een verzameling van metadatarecords groepeert. Wordt gebruikt om aanbod thematisch, organisatorisch of functioneel te structureren. Dit is een breder concept dan series en leidt tot een eigen portaal om data van een gelijke bron of thema in de kijker te zetten. Dit is aanbevolen voor alle verzamelingen die niet alleen versies doorheen de tijd of locaties van een zelfde concept weergeven.
 Voorbeelden omvatten verzamelingen van alle beschikbare datasets over historische kaarten, groeperingen per provincie of gemeente etc.  
 
 **Objectencatalogus** 
 
 Verklaring van de attributen in een datataset.
 
----
-
- 
 
 ## Standaarden & profielen
 
@@ -99,8 +96,6 @@ Europees applicatieprofiel voor het beschrijven van open data en dataservices.
 Vlaams profiel op DCAT-AP met bijkomende verplichtingen en aanbevelingen.  
 
 
----
-
 ## Publicatie & doorstroming
 
 **Datavindplaats**  
@@ -111,6 +106,3 @@ Automatisch ophalen en synchroniseren van metadata tussen Metadata Vlaanderen en
 
 **Once-only principe**  
 Principe waarbij metadata één keer wordt beschreven en vervolgens hergebruikt en doorgestroomd naar meerdere toepassingen. 
-
----
-

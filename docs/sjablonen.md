@@ -1,8 +1,9 @@
 
 # Welke sjabloon is juist voor mijn data?
- Wij onderscheiden er tussen datasets en services (met dezelfde keuzes) en bijkomende categorieën zoals Objectencatalogi (omschrijving van attributen in datatabellen)en SubCatalogi (verzameling van metadatarecords binnen de Metadata Vlaanderen Catalog).
 
- Als je een Service of Dataset wilt omschrijven kan je de volgenden vragen beantwoorden: 
+ Wij onderscheiden tussen datasets en services (met dezelfde keuzes) en bijkomende categorieën zoals objectencatalogi (omschrijving van attributen in datatabellen) en subcatalogi (verzameling van metadatarecords binnen de Metadata Vlaanderen catalogus).
+
+ Als je een _service_ of _dataset_ wilt omschrijven kan je de volgende vragen beantwoorden: 
 
 
 ```mermaid

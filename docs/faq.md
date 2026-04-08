@@ -15,17 +15,17 @@ Een instapgids voor nieuwe gebruikers staat [hier](docs/snelstarten.md ).
 Lees de [instructies](docs/minimale.effort.voor/datavindplaats.md) maar hou ook rekening met de [GDI richtlijnen](docs/gdi.best.practice.md)
 
 ***Ik zie meerdere secties met contactinformatie, wat moet ik waar invullen?***
-Aan elk record kunnen meerdere rollen gekoppeld zijn met eigen contact informatie. Gebruik de glossary om de verschillen te verkennen en de juiste Organisatiegegevens in te vullen. Per definitie gaat de contactinformatie uit de sectie 'Gebruiksinformatie (voor DCAT-records) en de Meta-metadata (voor ISO records) op Datavindplaats onderaan getoond worden. Indien ingevuld, wordt daar ook de Eigenaar en de Uitgever apart getoond.
+Aan elk record kunnen meerdere rollen gekoppeld zijn met eigen contactinformatie. Gebruik de glossary om de verschillen te verkennen en de juiste Organisatiegegevens in te vullen. Per definitie gaat de contactinformatie uit de sectie _Gebruiksinformatie_ (voor DCAT records) en de _Meta-metadata_ (voor ISO records) op Datavindplaats onderaan getoond worden. Indien ingevuld, wordt daar ook de _eigenaar_ en de _uitgever_ apart getoond.
 
 
 ## Specifieke classificaties
 
-**Hoe duidt ik aan dat mijn dataset een Hoogwaardige Dataset (HVD) is?**  
-Dataset die onder Europese HVD-wetgeving valt en bijkomende metadata-elementen vereist zoals wetgeving en HVD-categorie. Beide informaties worden via een thesaurus wordt gekoppeld aan een record. 
+**Hoe duid ik aan dat mijn dataset een Hoogwaardige Dataset (HVD) is?**  
+Datasets die onder de Europese HVD-wetgeving vallen vereisen bijkomende metadata-elementen zoals _wetgeving_ en _HVD categorie_. Beide elementen worden via een thesaurus gekoppeld aan een record. 
 
 ## Licensies en rechten 
 
-**Hoe duidt ik aan welke rechten de gebruikers op de omschreven datasets hebben?**
+**Hoe duid ik aan welke rechten de gebruikers op de omschreven datasets hebben?**
  
 ## De publicatie workflow 
 

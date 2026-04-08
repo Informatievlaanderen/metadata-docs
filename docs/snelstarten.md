@@ -4,7 +4,7 @@ title: Snel starten
 
 # Voor de eerste keer data beschrijven 
 
-In de meeste gevallen ga je inloggen als deel van een groep met een veilige authenticatie (zoals It's Me) en dan kan je een nieuwe record aanmaken met de meest geschikte [sjabloon](/docs/sjabloonen.md) voor je doeleind.
+In de meeste gevallen ga je inloggen als deel van een groep met een veilige authenticatie (zoals It's Me) en dan kan je een nieuwe record aanmaken met de meest geschikte [sjabloon](/docs/sjablonen.md) voor je doeleind.
 
 Geef je record een titel en klik op 'Bewaar en sluit' en je ziet de record in een overzicht van records zien staan. Klik nog eens op de titel en je ziet meteen het resultaat (in ontwerp). Je ziet zo ook rechtstreeks welke gegevens automatisch genereerd worden.
 

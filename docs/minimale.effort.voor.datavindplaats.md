@@ -34,7 +34,18 @@ Voor geografische datasets is er een sjabloon voorzien dat de ISO-normen volgt. 
 
 **In de meeste gevallen zal de lezer van deze handleiding gebruik willen maken van de sjabloon voor Open Data, volgens DCAT-AP-VL 2.0 (Sectie 3).** Voorlopig is er ook nog een sjabloon specifiek voor Gesloten Data (= metadata-DCAT v.2.0), maar deze wordt in 2026 uitgefaseerd. 
 
-Wie meerdere gelijkaardige records wil aanmaken via de Editor kan ook een record dupliceren en als tijdelijk sjabloon gebruiken (Record beheren/ Dupliceer) (Figuur 2).
+![Record creatiescherm](assets/minimale.effort.voor.datavindplaats/maak.een.record.dataset.png){ align=left }
+/// figure-caption | #record-creation-screen
+Verscheidene sjablonen zijn beschikbaar bij het aanmaken van een record
+///
+
+Wie meerdere gelijkaardige records wil aanmaken via de Editor kan ook een record dupliceren en als tijdelijk sjabloon gebruiken.
+
+![Record duplicatiescherm](assets/minimale.effort.voor.datavindplaats/record.dupliceren.png){ align=left }
+/// figure-caption | #record-duplication-screen
+Een duplicaat maken van een bestaand record
+///
+
 
 ## Context en principes van metadata binnen Datavindplaats
 
@@ -43,11 +54,13 @@ Deze handleiding beschrijft de **minimaal benodigde metadata** die nodig zijn om
 ### Datavindplaats als ecosysteem
 
 Datavindplaats is geen afzonderlijke catalogus, maar een **geïntegreerde vind- en ontsluitingslaag** bovenop:
+
 - Metadata Vlaanderen (operationele metadatahub)
 - GeoNetwork (ISO- en DCAT-editing & validatie)
 - Vlaamse, Belgische en Europese portalen (o.a. Geopunt, INSPIRE Geoportal, EU Open Data Portal)
 
 Metadata die hier worden ingevoerd, **stromen door** naar meerdere kanalen en worden gebruikt voor:
+
 - vindbaarheid
 - filtering
 - hergebruik
@@ -55,7 +68,8 @@ Metadata die hier worden ingevoerd, **stromen door** naar meerdere kanalen en wo
 
 ### ISO, DCAT en INSPIRE
 
-Voor geografische datasets geldt:
+Voor **geografische** datasets geldt:
+
 - ISO 19115/19139 is het bronsjabloon
 - ISO-metadata worden automatisch vertaald naar DCAT via het GeoDCAT-AP-VL mappingprofiel
 - DCAT is de gemeenschappelijke taal waarmee metadata:
@@ -68,10 +82,12 @@ ISO en DCAT zijn dus geen alternatieven, maar onderdelen van één keten.
 ### Minimale aangifte ≠ maximale conformiteit
 
 Een metadatarecord dat voldoet aan de **minimale aangifte**:
+
 - kan technisch gepubliceerd worden
 - kan zichtbaar zijn op Datavindplaats
 
 Maar:
+
 - is niet automatisch INSPIRE-conform
 - is niet automatisch geschikt voor Europese rapportering
 - is niet noodzakelijk kwaliteitsvol voor hergebruik
@@ -82,56 +98,61 @@ Voor INSPIRE, GDI-verplichtingen en kwaliteitsvolle hergebruikscenario’s zijn 
 ### Once-only principe
 
 Metadata worden één keer correct beschreven en wordt daarna hergebruikt in:
+
 - meerdere portalen
 - verschillende filters
 - monitoring- en rapportageprocessen
 
 Metadata zijn dus deel van de **infrastructuur**, en geen formulier.
 
+!!! abstract "In een notendop"
 
-> **Wat Datavindplaats effectief met metadata doet**
->
-> Datavindplaats gebruikt metadata niet enkel om records te tonen, maar ook om ze te verwerken.
-> De metadata worden via een API gebruikt voor:
-> -	filtering
-> -	sortering
-> -	groepering
-> -	facetten
-> -	contextweergave
-> -	hergebruik in andere catalogi
->
-> **Metadata sturen zichtbaarheid**
-> Bepaalde metadata-velden bepalen of een dataset:
-> -	zichtbaar is
-> -	publiek of niet-publiek wordt beschouwd
-> -	in filters en zoekresultaten verschijnt
-> Voorbeelden: toegangsrechten, thema’s, datums, rollen
->
-> **Metadata sturen vindbaarheid**
-> Datavindplaats groepeert en filtert datasets op basis van:
-> -	categorieën en thema’s
-> -	organisaties (uitgever/eigenaar)
-> -	datatypes (dataset, service, distributie)
-> Onvolledige of foutieve metadata leidt tot verminderde vindbaarheid.
->
-> **Metadata sturen sortering**
-> Records worden standaard gesorteerd op basis van de meest recente datum.
-> Zonder correcte datums kunnen datasets lager of onvoorspelbaar verschijnen.
->
-> **Metadata zijn once-only**
-> Metadata die in Metadata Vlaanderen worden ingevoerd:
-> -	stromen door naar Datavindplaats
-> -	kunnen geharvest worden door andere portalen
-> -	worden gebruikt voor monitoring en rapportering
-> Fouten of leegtes worden daardoor **meervoudig herhaald**.
->
-> **Minimale metadatering is een startpunt**
-> Minimale metadatering maakt publicatie mogelijk, maar:
-> -	garandeert geen optimale zichtbaarheid
-> -	garandeert geen hergebruik
-> -	garandeert geen INSPIRE-conformiteit
-> Bewuste invulling van metadata verhoogt de kwaliteit en het bereik van de dataset.
-> **Goede metadatering zorgt ervoor dat datasets niet alleen gepubliceerd worden, maar ook effectief gevonden, begrepen en hergebruikt worden.**
+    **Wat Datavindplaats effectief met metadata doet**
+
+    Datavindplaats gebruikt metadata niet enkel om records te tonen, maar ook om ze te verwerken.
+    De metadata worden via een API gebruikt voor:
+
+    -	filtering
+    -	sortering
+    -	groepering
+    -	facetten
+    -	contextweergave
+    -	hergebruik in andere catalogi
+
+    **Metadata sturen zichtbaarheid**
+    Bepaalde metadata-velden bepalen of een dataset:
+
+    -	zichtbaar is
+    -	publiek of niet-publiek wordt beschouwd
+    -	in filters en zoekresultaten verschijnt
+    Voorbeelden: toegangsrechten, thema’s, datums, rollen
+
+    **Metadata sturen vindbaarheid**
+    Datavindplaats groepeert en filtert datasets op basis van:
+    -	categorieën en thema’s
+    -	organisaties (uitgever/eigenaar)
+    -	datatypes (dataset, service, distributie)
+    Onvolledige of foutieve metadata leidt tot verminderde vindbaarheid.
+
+    **Metadata sturen sortering**
+    Records worden standaard gesorteerd op basis van de meest recente datum.
+    Zonder correcte datums kunnen datasets lager of onvoorspelbaar verschijnen.
+
+    **Metadata zijn once-only**
+    Metadata die in Metadata Vlaanderen worden ingevoerd:
+    -	stromen door naar Datavindplaats
+    -	kunnen geharvest worden door andere portalen
+    -	worden gebruikt voor monitoring en rapportering
+    Fouten of leegtes worden daardoor **meervoudig herhaald**.
+
+    **Minimale metadatering is een startpunt**
+    Minimale metadatering maakt publicatie mogelijk, maar:
+    -	garandeert geen optimale zichtbaarheid
+    -	garandeert geen hergebruik
+    -	garandeert geen INSPIRE-conformiteit
+    Bewuste invulling van metadata verhoogt de kwaliteit en het bereik van de dataset.
+
+    **Goede metadatering zorgt ervoor dat datasets niet alleen gepubliceerd worden, maar ook effectief gevonden, begrepen en hergebruikt worden.**
 
 
 ## Minimale metadata voor generieke data (DCAT-AP-VL)
@@ -198,7 +219,7 @@ Binnen Metadata Vlaanderen/Datavindplaats wordt aanbevolen en vaak vereist door 
 
 #### Distributies
 
-In een record op Datavindplaats gaat een sectie Distributie verschijnen, onafhankelijk van de ingegeven informatie in deze sectie. Als de beschreven dataset in verschillende formaten of versies ter beschikking staat, moet voor elk instantie een eigen sectie ‘Distributie’ aangemaakt en ingevuld worden.
+In een record op Datavindplaats gaat een sectie Distributie verschijnen, onafhankelijk van de ingegeven informatie in deze sectie. Als de beschreven dataset in verschillende formaten of versies ter beschikking staat, moet voor elk instantie een eigen sectie _Distributie_ aangemaakt en ingevuld worden.
 
 ##### Titel
 
@@ -210,7 +231,7 @@ Deze vrije tekst kan bijvoorbeeld instructies voor gebruik omvatten.
 
 ##### URL
 
-Er moet verplicht een URL aangegeven worden. Elke correct geformatteerde link (beginnend met http(s)://) naar een landingspagina of een downloadactie krijgt een ‘Downloadknop’ op Datavindplaats, die de landingspagina opent of het bestand rechtstreeks downloadt.
+Er moet verplicht een URL aangegeven worden. Elke correct geformatteerde link (beginnend met `http(s)://`) naar een landingspagina of een downloadactie krijgt een _Downloadknop_ op Datavindplaats, die de landingspagina opent of het bestand rechtstreeks downloadt.
 
 ##### Licentie (Cruciaal voor Open Data)
 
@@ -219,7 +240,7 @@ Om je dataset als **Open Data** te laten verschijnen op Datavindplaats, moet er 
 Typ geen vrije tekst. Selecteer de **Modellicentie voor gratis hergebruik** (of Creative Commons Zero) uit de keuzelijst.
 
 !!! technisch
-    Het systeem heeft de achterliggende link (URI) van de licentie nodig (bijv. http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0). Alleen dan werkt de filter "Open Data".
+    Het systeem heeft de achterliggende link (URI) van de licentie nodig (bijv. `http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0`). Alleen dan werkt de filter "Open Data".
 
 ##### Formaat
 
@@ -266,13 +287,13 @@ Voor geografische services (WMS, WFS, WMTS) gebruik je een ander sjabloon dan vo
 #### Connectie (connectPoint)
 - De technische "deurbel" van de service.
 - Instructie: Vul hier de Capabilities-URL in.
-    - Fout: https://mijnserver.be/kaart (Dit is een webpagina)
-    - Goed: https://mijnserver.be/wms?request=GetCapabilities&service=WMS (Dit is de technische link)
+    - Fout: `https://mijnserver.be/kaart` (Dit is een webpagina)
+    - Goed: `https://mijnserver.be/wms?request=GetCapabilities&service=WMS` (Dit is de technische link)
 
 #### Koppeling met Dataset (OperatesOn) Cruciaal!
 - Zonder dit veld _zweeft_ je service los in de catalogus. De gebruiker ziet de service, maar weet niet welke dataset erin zit.
 - Instructie: In de sectie Gekoppelde bronnen (OperatesOn) moet je de Dataset selecteren die door deze service ontsloten wordt.
-    - Actie: Zoek op de titel van je dataset en selecteer de UUID. Hierdoor ontstaat de relatie: Service X toont Dataset Y.
+    - Actie: Zoek op de titel van je dataset en selecteer de UUID. Hierdoor ontstaat de relatie: Service `X` toont Dataset `Y`.
 
 #### Service Operaties (Operations)
 - Welke commando's begrijpt de service?
@@ -289,26 +310,27 @@ Tabel 2 Minimale checklist voor Data Services
 
 | Veld                                             | Instructie & Belang                                                                                                                          |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Endpoint URL (dcat:endpointURL)                  | **Verplicht**. De "root" locatie van de service.</br>_Voorbeeld_: https://api.vlaanderen.be/v1/scholen                                                                                            |
+| Endpoint URL (dcat:endpointURL)                  | **Verplicht**. De "root" locatie van de service.</br>_Voorbeeld_: `https://api.vlaanderen.be/v1/scholen`                                                                                            |
 | Endpoint Beschrijving (dcat:endpointDescription) | **Sterk aanbevolen**. Link naar de technische documentatie (Swagger/OpenAPI/ReDoc). </br>_Waarom?_ Ontwikkelaars hebben dit nodig om de API te kunnen bouwen.                                                                         |
 | Bedient Dataset (dcat:servesDataset)             | **Cruciaal**. De koppeling naar de dataset.</br>_Instructie_: Link hier naar het metadatarecord van de dataset. Als je dit vergeet, verschijnt de API niet bij de dataset op Datavindplaats. |
 | Conformiteit (dct:conformsTo)  | Geeft aan welke standaard de API volgt.</br>_Voorbeeld_: OpenAPI 3.0 of OGC API Features. |
 | Licentie | **Vergeet dit niet!** Vaak zetten mensen een licentie op de data, maar vergeten ze de service. Zonder licentie op de service durven bedrijven deze niet in te bouwen in hun apps. |
 
-> **De "Gouden Regel" voor Services**
-> Een service is pas nuttig als hij gekoppeld is aan data.
-> -	ISO: Vul altijd het veld `OperatesOn` in.
-> -	DCAT: Vul altijd het veld `ServesDataset` in.
-> Doe je dit niet? Dan is je service een _lege huls_ in de zoekresultaten.
+!!! tip De _Gouden Regel_ voor Services
+
+    Een service is pas nuttig als hij gekoppeld is aan data.
+
+    -	ISO: Vul altijd het veld `OperatesOn` in.
+    -	DCAT: Vul altijd het veld `ServesDataset` in.
+
+    Doe je dit niet? Dan is je service een _lege huls_ in de zoekresultaten.
 
 
 ## Minimale metadata voor geografische data (ISO-19115/19139)
 
 ### Overzicht
 
-De volgende tabel (Tabel 3) geeft per tab in de editor van sjabloon voor geografische gegevens een overzicht over alle velden, die ofwel volgens ISO-19115/19139 verplicht zijn om een record zichtbaar te maken op Datavindplaats, of aangeraden worden, omdat ze op Datavindplaats getoond worden: 
-
-Tabel 3 Minimale checklist voor het aanmaken van een Iso-record
+De onderstaande tabel geeft per tab in de editor van sjabloon voor geografische gegevens een overzicht over alle velden, die ofwel volgens ISO-19115/19139 verplicht zijn om een record zichtbaar te maken op Datavindplaats, of aangeraden worden, omdat ze op Datavindplaats getoond worden.
 
 | Tab                               | Veldnaam                                                | Korte omschrijving                                    | Verplicht                                           | Staat op DVP |
 | --------------------------------- | ------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------- | ------------ |
@@ -341,7 +363,11 @@ Tabel 3 Minimale checklist voor het aanmaken van een Iso-record
 | Organisatie                       | Naam van de organisatie die als Uitgever wordt getoond. | :lucide-x:                                                   | :lucide-check:                                                  |              |
 | Overzicht                         | Voorbeeldweergave                                       | Thumbnail van de dataset                              | :lucide-x:                                                 | :lucide-check:           |
 
-De volgende informatie wordt ook op Datavindplaats weer gegeven, maar moet niet handmatig worden ingevuld worden in de editor:
+/// table-caption | <
+Minimale checklist voor het aanmaken van een Iso-record
+///
+
+De volgende informatie wordt ook op Datavindplaats weergegeven, maar moet niet handmatig worden ingevuld worden in de editor:
 
 - Gepubliceerd: Datum van aanmaak van het record
 - Laatst gewijzigd: Datum van de laatste wijziging
@@ -369,19 +395,18 @@ Wordt getoond in de catalogus en zoekresultaten. Gebruik een duidelijke en bekno
 
 Minimaal één van de drie opties Creatiedatum, Publicatiedatum of Wijzigingsdatum invullen.
 
-**Impact op Datavindplaats**: Datavindplaats sorteert records op basis van de meest recente datum (bijvoorbeeld modified, issued of created). Ontbrekende of foutieve datums kunnen ertoe leiden dat datasets lager of onvoorspelbaar worden weergegeven.
+!!! question "Checklist versiebeheer: moet ik _updaten_ of _aanmaken_?"
 
-> Checklist Versiebeheer: kiezen tussen updaten of nieuw aanmaken:
-> Vraag: Ik heb nieuwe data. Wat moet ik doen?
-> 1. Is het een correctie of actualisatie van een bestaande dataset?
->     - _Voorbeeld_: De adressenlijst wordt elke nacht bijgewerkt.
->     - **Actie**: Bewerk het bestaande metadata-record. Pas de "Wijzigingsdatum" aan naar vandaag. Behoud dezelfde FileIdentifier (UUID).
->     - _Resultaat_: De dataset blijft vindbaar onder dezelfde link, maar stijgt in de sortering op "Laatst gewijzigd".
-> 2. Is het een nieuwe jaargang of een bevroren toestand (snapshot)?
->     - _Voorbeeld_: "Bodemgebruikskaart 2024" (naast die van 2023).
->     - **Actie**: Maak een kopie (duplicaat) van het record. Geef het een nieuwe Titel (met jaartal) en een nieuwe FileIdentifier. Zet de status van het oude record (2023) eventueel op "Historisch archief".
->     - _Resultaat_: Beide jaren blijven vindbaar. De gebruiker kan de historie raadplegen.
+    1. Is het een correctie of actualisatie van een bestaande dataset?
+        - _Voorbeeld_: De adressenlijst wordt elke nacht bijgewerkt.
+        - **Actie**: Bewerk het bestaande metadata-record. Pas de "Wijzigingsdatum" aan naar vandaag. Behoud dezelfde FileIdentifier (UUID).
+        - _Resultaat_: De dataset blijft vindbaar onder dezelfde link, maar stijgt in de sortering op "Laatst gewijzigd".
+    2. Is het een nieuwe jaargang of een bevroren toestand (snapshot)?
+        - _Voorbeeld_: "Bodemgebruikskaart 2024" (naast die van 2023).
+        - **Actie**: Maak een kopie (duplicaat) van het record. Geef het een nieuwe Titel (met jaartal) en een nieuwe FileIdentifier. Zet de status van het oude record (2023) eventueel op "Historisch archief".
+        - _Resultaat_: Beide jaren blijven vindbaar. De gebruiker kan de historie raadplegen.
 
+**Impact op Datavindplaats**: Datavindplaats sorteert records op basis van de meest recente datum (bijvoorbeeld `modified`, `issued` of `created`). Ontbrekende of foutieve datums kunnen ertoe leiden dat datasets lager of onvoorspelbaar worden weergegeven.
 
 ##### Versie
 
@@ -391,7 +416,9 @@ Een opmerking over de versie. Dit veld heeft op dit moment een asterisk maar is 
 
 Een uniek ID. Deze sectie kan technisch verwijderd worden, maar kan niet hersteld worden. Het record moet dan opnieuw aangemaakt worden. Er wordt nog een technische oplossing uitgewerkt om dit op te vangen. Tot deze is ingebouwd, mag deze sectie niet handmatig worden verwijderd.
 
-**Opgelet: Identifiers zijn systeemkritisch**: Identifiers worden gebruikt voor harvesting, deduplicatie, relaties tussen records en updates. Een foutief of instabiel identifiergebruik kan leiden tot dubbele records of foutieve publicaties in Datavindplaats en externe catalogi.
+!!! warning "Identifiers zijn systeemkritisch" 
+
+    Identifiers worden gebruikt voor harvesting, deduplicatie, relaties tussen records en updates. Een foutief of instabiel identifiergebruik kan leiden tot dubbele records of foutieve publicaties in Datavindplaats en externe catalogi.
 
 ##### Naam van de dataset(serie)
 
@@ -418,13 +445,15 @@ Om een contact op Datavindplaats te zien verschijnen moet er contact informatie 
 - Uitgever - Partij die de data publiceert => verschijnt op Datavindplaats
 
 !!! info
-    Lees meer over rollen onder punt 4.7 in de Best Practices gids.
+    Lees meer over rollen onder Punt 4.7 in de Best Practices gids.
 
-> **Let op bij meerdere rollen**
-> Bij de transformatie naar Datavindplaats wordt slechts één contact overgenomen (volgens een vaste voorkeur). Plaats daarom de belangrijkste organisatie eerst. De Fallback-logica:
-> -	publisher → owner → custodian → pointOfContact
-> -	Dit zijn ISO-rollen (CI_RoleCode) die gebruikt worden om bij omzetting naar DCAT één dct:publisher af te leiden.
-> -	Bij meerdere rollen: **eerste wint**
+!!! warning "Let op bij meerdere rollen"
+
+    Bij de transformatie naar Datavindplaats wordt slechts één contact overgenomen (volgens een vaste voorkeur). Plaats daarom de belangrijkste organisatie eerst. De Fallback-logica:
+
+    -	publisher → owner → custodian → pointOfContact
+    -	Dit zijn ISO-rollen (CI_RoleCode) die gebruikt worden om bij omzetting naar DCAT één dct:publisher af te leiden.
+    -	Bij meerdere rollen: **eerste wint**
 
 
 ##### Frequentie
@@ -435,22 +464,25 @@ Er zijn twee soorten van gegevens: de continu beheerde datasets en de discrete v
 - Discrete versies van datasets kennen daarentegen een tragere updatefrequentie en worden als het ware op bepaalde ogenblikken in de tijd als ‘snapshots’ van dat moment vrijgegeven.
 
 !!! info
-    Lees meer onder punt 3.1 in de Best GDI Best Practices over de correcte Versiebeheer.
+    Lees meer onder Punt 3.1 in de Best GDI Best Practices over de correcte Versiebeheer.
 
 ##### Trefwoorden
 
-Niet technisch verplicht maar voor INSPIRE wel nodig. Je kunt naast losse eigen trefwoorden ook trefwoorden uit een bestaande thesaurus (gecontroleerde trefwoordenlijst) opnemen. Sowieso moet voor INSPIRE-datasets minimaal één trefwoord uit de thesaurus “GEMET – INSPIRE themes” en één trefwoord uit de thesaurus “GEMET – Concepten” worden toegevoegd. Prioritaire datasets moeten voor INSPIRE het betreffende trefwoord uit de thesaurus “INSPIRE priority data set” opnemen, in functie van correcte monitoring en rapportering bij Europa.
+Niet technisch verplicht maar voor INSPIRE wel nodig. Je kunt naast losse eigen trefwoorden ook trefwoorden uit een bestaande thesaurus (gecontroleerde trefwoordenlijst) opnemen. Sowieso moet voor INSPIRE-datasets minimaal één trefwoord uit de thesaurus `GEMET – INSPIRE themes` en één trefwoord uit de thesaurus `GEMET – Concepten` worden toegevoegd. Prioritaire datasets moeten voor INSPIRE het betreffende trefwoord uit de thesaurus `INSPIRE priority data set` opnemen, in functie van correcte monitoring en rapportering bij Europa.
 
 **Gebruik in Datavindplaats**
 Categorieën en trefwoorden worden gebruikt om datasets te groeperen en te filteren in Datavindplaats.
 Deze metadata bepalen in welke thematische context een dataset wordt aangeboden en hoe ze teruggevonden wordt.
 
 !!! info
-    Lees meer hierover onder punt 4.20 in de Best Practices
+    Lees meer hierover onder Punt 4.20 in de Best Practices
 
-> **Verplicht voor vindbaarheid**: Om je dataset zichtbaar te maken in de **Thema-filters** (facetten) van Datavindplaats, moet je minimaal één trefwoord selecteren uit een officiële thesaurus.
-> -	**Aanbevolen Thesaurus**: Gebruik de "**GDI-Vlaanderen Trefwoorden**" of de "**Europees Data Thema**" thesaurus in de editor.
-> -	**Wat gebeurt er als ik dit niet doe?** Je dataset is dan alleen vindbaar als iemand exact jouw titel intypt in de zoekbalk, maar verschijnt niet als iemand klikt op de categorie "Leefmilieu" of "Mobiliteit" in de zijbalk.
+!!! warning "Verplicht voor vindbaarheid"
+
+    Om je dataset zichtbaar te maken in de **Thema-filters** (facetten) van Datavindplaats, moet je minimaal één trefwoord selecteren uit een officiële thesaurus.
+
+    -	**Aanbevolen Thesaurus**: Gebruik de "**GDI-Vlaanderen Trefwoorden**" of de "**Europees Data Thema**" thesaurus in de editor.
+    -	**Wat gebeurt er als ik dit niet doe?** Je dataset is dan alleen vindbaar als iemand exact jouw titel intypt in de zoekbalk, maar verschijnt niet als iemand klikt op de categorie "Leefmilieu" of "Mobiliteit" in de zijbalk.
 
 
 ##### Categorie
@@ -471,6 +503,11 @@ Hier beschrijf je de taal die in het metadatarecord wordt gebruikt. In veel geva
 
 Een geografische dataset moet een geografische begrenzing hebben. Als de sectie per ongeluk verwijderd werd, kan het hersteld worden door één van de knoppen “Voeg één begrenzing toe voor elk sleutelwoord” of “Voeg één begrenzing toe voor alle sleutelwoorden” (zie Figuur 3). 
 
+![Ruimtelijke begrenzing in ISO](assets/minimale.effort.voor.datavindplaats/ruimtelijke.begrenzing.iso.png){ align=left, width=500 }
+/// figure-caption | #spatial-extent-iso
+Toevoeging van ruimtelijke begrenzing
+///
+
 #### Referentiessysteem
 
 ##### Horizontaal en/of verticaal referentiesysteem 
@@ -478,7 +515,8 @@ Een geografische dataset moet een geografische begrenzing hebben. Als de sectie 
 Het standaard systeem voor België is al ingevuld met [Lambert 1972/ Belgian Lambert 1972](http://www.opengis.net/def/crs/EPSG/0/31370). Dit veld kan leeg gemaakt worden, maar wij raden dit sterk af omdat dit impact heeft op het GIS-hergebruik.
 
 !!! info
-    Onder punt 4.11 in het Best Practices document zijn meer details te vinden.
+
+    Onder Punt 4.11 in het Best Practices document zijn meer details te vinden.
 
 #### Kwaliteit
 
@@ -500,24 +538,40 @@ Als een ISO-sjabloon gebruikt wordt en de data gepubliceerd kunnen worden, voldo
 
 ISO-validiteit betekent niet automatisch INSPIRE-conformiteit; daarvoor zijn bijkomende inhoudelijke vereisten van toepassing.
 
+![Domein filter in Datavindplaats](assets/minimale.effort.voor.datavindplaats/domein.facet.datavindplaats.png){ align=left, width=250 }
+/// figure-caption | #domain-filter-dvp
+Domein filter in Datavindplaats
+///
+
 #### Toegangs-en gebruiksbeperkingen (accessRights)
 
-**Opgelet: Functioneel verplicht voor zichtbaarheid**
-Als geen toegangs- of gebruiksbeperking wordt opgegeven, beschouwt Datavindplaats de dataset of service als **niet publiek**. Dit kan ertoe leiden dat het record niet zichtbaar is of niet kan gebruikt worden in een filter, ook al is het technisch gepubliceerd.
+!!! warning "Functioneel verplicht voor zichtbaarheid"
+
+    Als geen toegangs- of gebruiksbeperking wordt opgegeven, beschouwt Datavindplaats de dataset of service als **niet publiek**. Dit kan ertoe leiden dat het record niet zichtbaar is of niet kan gebruikt worden in een filter, ook al is het technisch gepubliceerd.
 
 ##### Beperkingen
 
-Deze informatie wordt niet in de Datavindplaatsrecord getoond maar hierop wordt de catalogus gefilterd (Figuur 4). Meerdere velden hebben een asterisk maar geen detail is strikt noodzakelijk voor publicatie.
+Deze informatie wordt niet in het Datavindplaatsrecord getoond maar hierop wordt de catalogus gefilterd. Meerdere velden hebben een asterisk maar geen detail is strikt noodzakelijk voor publicatie.
+
+![Licentie filter in Datavindplaats](assets/minimale.effort.voor.datavindplaats/licentie.facet.datavindplaats.png){ align=left, width=250 }
+/// figure-caption | #license-filter-dvp
+Licentie filter in Datavindplaats
+///
+
+![Licentie filter in Datavindplaats](assets/minimale.effort.voor.datavindplaats/legale.beperkingen.iso.png){ align=left, width=550 }
+/// figure-caption | #legale-beperkingen-iso
+Modellicenties toevoegen
+///
 
 !!! info
     Sectie 4.21 in de Best Practices document levert achtergrondkennis over de types licenties en gebruiksbeperkingen
 
-!!! warning
-    **Let op**: Typ de licentie **niet** als vrije tekst in (bijv. "Gratis gebruik").
+!!! warning "Licenties als vrije tekst"
+
+    Typ de licentie **niet** als vrije tekst in (bijv. "Gratis gebruik").
 
     -	**Waarom**? Datavindplaats gebruikt een filter "Licentie". Dit filter werkt alleen als de licentie gekoppeld is aan een officiële code (URI). Vrije tekst wordt door de computer niet herkend als "Open Data".
-    -	**Hoe wel**? Gebruik de zoekbalk in de editor en selecteer de "**Modellicentie voor gratis hergebruik**" uit de lijst die verschijnt. Controleer of de link (URI) http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0 automatisch wordt ingevuld (Figuur 4).
-
+    -	**Hoe wel**? Gebruik de zoekbalk in de editor en selecteer de "**Modellicentie voor gratis hergebruik**" uit de lijst die verschijnt. Controleer of de link (URI) `http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0` automatisch wordt ingevuld (Figuur 4).
 
 
 ##### Toegankelijkheid
@@ -533,7 +587,7 @@ Deze sectie vereist technisch gezien geen details om een record te kunnen public
 
 ##### Distributieformaten
 
-In deze sectie kunnen formaten van bestanden (bijvoorbeeld ‘Esri Shape’) aangegeven worden, die op Datavindplaats onder ‘Distributie’ apart getoond worden, als in de sectie ‘Online bronnen’ een juiste link naar de downloadlocatie gelegd wordt (zie Tabel 4 voor de exacte protocollen). Als bestanden in verschillende formaten via dezelfde link beschikbaar zijn, volstaat een link en verschijnen de formaten als aparte distributies met dezelfde link.
+In deze sectie kunnen formaten van bestanden (bijvoorbeeld `Esri Shape`) aangegeven worden, die op Datavindplaats onder ‘Distributie’ apart getoond worden, als in de sectie ‘Online bronnen’ een juiste link naar de downloadlocatie gelegd wordt (zie Tabel 4 voor de exacte protocollen). Als bestanden in verschillende formaten via dezelfde link beschikbaar zijn, volstaat een link en verschijnen de formaten als aparte distributies met dezelfde link.
 
 ##### Verdeler
 
@@ -541,15 +595,7 @@ Geef idealiter de contactinformatie van de verdeler Dit komt niet op Datavindpla
 
 ##### Online Bronnen 
 
-Voeg een nieuwe connectie toe met de knop “+ Online bronnen”. Hier kan je statische links naar downloadbare bestanden toevoegen of dynamische links naar webservices. Voor niet publieke data wordt een algemene landingspagina van je organisatie aangeraden. **Belangrijk**: Het invullen van een URL alleen is niet voldoende. Je moet het juiste protocol selecteren uit de keuzelijst, zie Tabel 4. Dit protocol vertelt het systeem (en Geopunt) wat het met de link moet doen, bv. een kaart tonen of een bestand downloaden.
-
-!!! note
-    Hoe Datavindplaats links interpreteert
-    -	Downloadbaar bestand (ZIP, CSV, GML, …) → Distributie
-    -	WMS, WFS, WMTS, WCS, API, CSW → Dataservice
-    Een foutieve invulling kan ertoe leiden dat een distributie of service niet correct verschijnt in Datavindplaats.
-    Zonder distributie is een dataset technisch zichtbaar, maar functioneel niet bruikbaar voor eindgebruikers.
-
+Voeg een nieuwe connectie toe met de knop “+ Online bronnen”. Hier kan je statische links naar downloadbare bestanden toevoegen of dynamische links naar webservices. Voor niet publieke data wordt een algemene landingspagina van je organisatie aangeraden. **Belangrijk**: Het invullen van een URL alleen is niet voldoende. Je moet het juiste protocol selecteren uit de keuzelijst, zie onderstaande tabel. Dit protocol vertelt het systeem (en Geopunt) wat het met de link moet doen, bv. een kaart tonen of een bestand downloaden.
 
 | Type Link            | Te selecteren Protocol (Exacte waarde) | Resultaat op Datavindplaats/Geopunt                                                                         |
 | -------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -557,6 +603,20 @@ Voeg een nieuwe connectie toe met de knop “+ Online bronnen”. Hier kan je st
 | **Directe Download** | WWW:DOWNLOAD-1.0-http--download        | Directe downloadknop. Het bestand wordt direct binnengehaald.                                               |
 | **Landingspagina**   | WWW:LINK-1.0-http--link                | Link naar webpagina. De gebruiker wordt doorgestuurd naar een externe pagina (bv. voor niet-publieke data). |
 | **WFS (Ruwe data)**  | OGC:WFS-2.0.0-http-get-feature         | Maakt het mogelijk voor GIS-software om de data technisch bevragen.                                         |
+
+/// table-caption | <
+Overzicht van linken in distributies en hun representatie op Datavindplaats
+///
+
+!!! note
+    Hoe Datavindplaats links interpreteert:
+
+    -	Downloadbaar bestand (`ZIP`, `CSV`, `GML`, …) → Distributie
+    -	`WMS`, `WFS`, `WMTS`, `WCS`, `API`, `CSW` → Dataservice
+
+    Een foutieve invulling kan ertoe leiden dat een distributie of service niet correct verschijnt in Datavindplaats.
+    Zonder distributie is een dataset technisch zichtbaar, maar functioneel niet bruikbaar voor eindgebruikers.
+
    
 #### Meta-metadata
 
@@ -564,7 +624,12 @@ Voeg een nieuwe connectie toe met de knop “+ Online bronnen”. Hier kan je st
 
 Er zijn velden in meerdere tabs voor contactpunten mbt gebruik, over de voorbewerking, de bron van de data en voor het beheer van de metadata. Indien van toepassing wordt aanbevolen om deze volledig in te vullen, **maar voor publicatie is alleen de naam van de organisatie in de tab Meta-metadata strikt noodzakelijk**.
 
-Vermeld bij voorkeur minstens één keer je naam, een organisatie, je rol (contactpunt is vooringesteld) en een aanspreekpunt (e-mail of URL). Op Datavindplaats wordt onderaan van de dataset je website en E-mailadres getoond (Figuur 7), als beide gegevens in deze tab aangegeven worden.
+Vermeld bij voorkeur minstens één keer je naam, een organisatie, je rol (contactpunt is vooringesteld) en een aanspreekpunt (e-mail of URL). Op Datavindplaats wordt onderaan de datasetpagina je website en E-mailadres getoond, als beide gegevens in deze tab aangegeven worden.
+
+![Licentie filter in Datavindplaats](assets/minimale.effort.voor.datavindplaats/vragen.over.deze.dataset.dvp.png){ align=left, width=400 }
+/// figure-caption | #contact-field-dvp
+Contactveld op Datavindplaats
+///
 
 Als alleen een naam ingevuld wordt, verschijnt op Datavindplaats geen contactsectie.
 
@@ -610,6 +675,7 @@ Datavindplaats is **API-gedreven**. Metadata worden gebruikt voor:
 
 
 **ISO ↔ DCAT in het kort**
+
 - ISO (geo) en DCAT (open/generiek) zijn geen alternatieven, maar delen één keten.
 - ISO-metadata worden automatisch vertaald naar DCAT (GeoDCAT-AP-VL).
 - Datavindplaats werkt intern altijd met DCAT-concepten.
@@ -623,15 +689,19 @@ Bij omzetting vanuit ISO wordt deze afgeleid via:
 - Plaats de belangrijkste organisatie eerst.
 
 **Datums & versies (heel belangrijk)**
+
 - Datavindplaats sorteert op de meest recente datum.
 - Gebruik:
     - Update → zelfde dataset, nieuwe modified
     - Nieuwe versie/snapshot → nieuw record
 
-Tip: twijfel? → update is meestal correct.
+!!! tip
+
+    Gebruik bij twijfel `update`, dit is meestal correct.
 
 
 **Identifiers**
+
 - Identifiers zijn systeemkritisch:
     - harvesting
     - deduplicatie
@@ -640,10 +710,12 @@ Tip: twijfel? → update is meestal correct.
 
 
 **Distributie of service?**
+
 Gebruik deze beslisregel:
-- Downloadbaar bestand (ZIP, CSV, GML, …)
+
+- Downloadbaar bestand (`ZIP`, `CSV`, `GML`, …)
     - > Distributie
-- WMS / WFS / API / CSW / endpoint
+- `WMS` / `WFS` / `API` / `CSW` / endpoint
     - > Dataservice
 
 

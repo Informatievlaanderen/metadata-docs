@@ -62,17 +62,18 @@ nav = [
         ] },
         { "Instructies" = [
             "minimale.effort.voor.datavindplaats.md",
+            "gdi.best.practice.md",
         ] },
         { "Applicatieprofielen" = [
-            "applicatieprofielen.md",
-            "applicatieprofielen/dcatapvl.md",
+            "applicatieprofielen/index.md",
+            "applicatieprofielen/metadatadcat2.md",
+            "applicatieprofielen/dcatapvl2.md",
+            "applicatieprofielen/dcatapvl3.md",
         ] },
     ] },
     { "Architectuur" = [
-        { "Technische documentatie" = [
-
-        ] },
-    ] },
+        "workflow.md"
+    ]},
     { "Community" = [
         { "Draag bij" = "draagbij.md" },
         { "Werking" = "werking.md" },
@@ -97,6 +98,10 @@ nav = [
 #
 # Read more: https://zensical.org/docs/customization/#additional-javascript
 #extra_javascript = ["javascripts/extra.js"]
+extra_javascript = [
+    "https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js",
+    "javascripts/tablesort.js"
+]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
@@ -351,6 +356,11 @@ custom_fences = [
 emoji_index = "zensical.extensions.emoji.twemoji"    # (1)! # icons
 emoji_generator = "zensical.extensions.emoji.to_svg" # icons
 
-[project.markdown_extensions.md_in_html] # grids, images
+[project.markdown_extensions.md_in_html] # grids, images, captions
 
-[project.markdown_extensions.pymdownx.blocks.caption] # images
+[project.markdown_extensions.pymdownx.blocks.caption] # images, captions
+types = [
+    'caption',
+    { name = 'figure-caption', prefix= 'Figuur {}.' },
+    { name = 'table-caption', prefix = 'Tabel {}.' }
+]

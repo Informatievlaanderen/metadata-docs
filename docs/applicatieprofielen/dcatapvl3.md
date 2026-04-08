@@ -1,10 +1,24 @@
 ---
-icon: lucide/book-open-check
+icon: lucide/calendar-plus
 ---
 
-# DCAT-AP-VL
+# DCAT-AP Vlaanderen (DCAT3)
 
+Dit is het `DCAT-AP Vlaanderen` applicatieprofiel, gebaseerd op het vocabularium `DCAT3`.
 Dit is het top-level Vlaams applicatieprofiel, waarin je onder andere Datasets en Dataservices kan beschrijven. Hieronder vind je een overzicht van de entiteiten die in het applicatieprofiel beschreven worden.
+
+
+# Applicatieprofiel
+
+| Eigenschap | Waarde                                                                                    |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| Titel      | DCAT-AP Vlaanderen                                                                        |
+| URL        | <https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/erkendestandaard/2026-02-12> |
+| Versie     | 2026-02-12                                                                                |
+| Licentie   | https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0               |
+
+
+# Entiteiten
 
 ## [Agent](http://purl.org/dc/terms/Agent)
 
@@ -16,7 +30,7 @@ Dit is het top-level Vlaams applicatieprofiel, waarin je onder andere Datasets e
 
 | Eigenschap                | URI                                                         | Type              | Type URI                                                                | Kardinaliteit |
 | ------------------------- | ----------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------- | ------------- |
-| alternatieveIdentificator<br/>test | [adms:identifier](http://www.w3.org/ns/adms#identifier)     | Identificator     | [adms:Identifier](http://www.w3.org/ns/adms#Identifier)                 | 0..n          |
+| alternatieveIdentificator | [adms:identifier](http://www.w3.org/ns/adms#identifier)     | Identificator     | [adms:Identifier](http://www.w3.org/ns/adms#Identifier)                 | 0..n          |
 | beschrijving              | [dct:description](http://purl.org/dc/terms/description)     | TaalString        | [rdf:langString](http://www.w3.org/1999/02/22-rdf-syntax-ns#langString) | 1..n          |
 | contactinformatie         | [dcat:contactPoint](http://www.w3.org/ns/dcat#contactPoint) | Contactinfo       | [vcard:Kind](http://www.w3.org/2006/vcard/ns#Kind)                      | 1..1          |
 | heeftDataService          | [dcat:service](http://www.w3.org/ns/dcat#service)           | Dataservice       | [dcat:DataService](http://www.w3.org/ns/dcat#DataService)               | 0..n          |
@@ -217,6 +231,7 @@ Dit is het top-level Vlaams applicatieprofiel, waarin je onder andere Datasets e
 | Eigenschap   | URI                                                                                                                                            | Type               | Type URI                                                    | Kardinaliteit |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------------------------- | ------------- |
 | bronresource | [mdcat:RelatieQualificatie.catalogusResource.source](https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source) | Catalogus Resource | [dcat:Resource](http://www.w3.org/ns/dcat#Resource)         | 1..1          |
+| doelresource | [mdcat:RelatieQualificatie.catalogusResource.target](https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target) | Catalogus Resource | [dcat:Resource](http://www.w3.org/ns/dcat#Resource)         | 1..1          |
 | rol          | [dcat:hadRole](http://www.w3.org/ns/dcat#hadRole)                                                                                              | Code               | [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) | 1..1          |
 
 ## [Standaard](http://purl.org/dc/terms/Standard)

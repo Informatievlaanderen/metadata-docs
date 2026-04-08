@@ -10,7 +10,7 @@ icon: lucide/fishing-hook
 
 - de [Datavindplaats](https://www.vlaanderen.be/datavindplaats)
 - het [het INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/srv/dut/catalog.search#/home)
-- het [Belgische Data Portaal](data.gov.be) 
+- het [Belgische Data Portaal](https://data.gov.be) 
 - het [Europese Data Portaal](https://data.europa.eu/) 
 
 [Lees meer over Metadata Vlaanderen](https://www.vlaanderen.be/geopunt/vlaams-geoportaal/metadata/metadata-in-vlaanderen)
@@ -25,8 +25,6 @@ GeoNetwork biedt onder meer:
 - Een **online metadata editor** met templates en validatie  
 - Ondersteuning voor **meerdere metadata-standaarden en profielen**  
 - Harvesting en synchronisatie tussen verschillende metadataknooppunten  
-
-[Lees meer over Geonetwork]()
 
 ## ISO- en DCAT-conforme metadata in één interface
 

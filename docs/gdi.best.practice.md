@@ -1,5 +1,6 @@
 ---
 icon: lucide/diamond-plus
+titel: Richtlijn GDI-Vlaanderen (Best Practice)
 ---
 
 # Richtlijn GDI-Vlaanderen Best Practices voor Metadata v2.0

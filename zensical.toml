@@ -50,12 +50,13 @@ nav = [
         "snelstarten.md",
         "metadata.md",
         "metadatavlaanderen.md",
-        
-        { "Glossary" = "glossary.md" },
+        "glossary.md" ,
     ] },
     { "Handleiding" = [
         { "Editoren" = [
             "editoren.md",
+            "sjablonen.md",
+            "usergroupmanagement.md",
         ] },
         { "Admins" = [
             "admins.md",

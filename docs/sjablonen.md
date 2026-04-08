@@ -1,4 +1,7 @@
-
+---
+icon: lucide/form
+title: Subcatalogi aanmaken
+---
 # Welke sjabloon is juist voor mijn data?
 
  Wij onderscheiden tussen datasets en services (met dezelfde keuzes) en bijkomende categorieën zoals objectencatalogi (omschrijving van attributen in datatabellen) en subcatalogi (verzameling van metadatarecords binnen de Metadata Vlaanderen catalogus).

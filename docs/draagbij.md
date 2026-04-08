@@ -1,5 +1,6 @@
 ---
 title: Draag bij
+icon: lucide/handshake
 ---
 
 # metadata-docs

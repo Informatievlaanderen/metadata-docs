@@ -1,4 +1,5 @@
 ---
+icon: lucide/door-closed
 title: Toegangscontrole
 ---
 

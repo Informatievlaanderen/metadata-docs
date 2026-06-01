@@ -1,6 +1,9 @@
 document$.subscribe(function() {
-  var tables = document.querySelectorAll("article table:not([class])")
+  var tables = document.querySelectorAll(".datatable table")
   tables.forEach(function(table) {
-    new DataTable(table)
+    new DataTable(table, {
+      columnControl: ['order', ['searchList']],
+      lengthMenu: [10, 25, 100, { label: 'All', value: -1 }]
+    });
   })
 })

@@ -36,7 +36,7 @@ Context waarbinnen metadatarecords worden aangemaakt en beheerd. Rechten zijn ge
 
 ### Binnen een record
 
-**Uitgvever**
+**Uitgever**
 
 **Eigenaar**
 
@@ -53,9 +53,6 @@ Status waarbij een editor het record ter beoordeling indient bij de hoofdeditor.
 
 **Gepubliceerd**  
 Status waarbij het record publiek zichtbaar is en kan worden geharvest door externe portalen zoals Datavindplaats. Binnenkort kunnen records ook privaat gepubliceerd worden om intern beheer van datasets mogelijk te maken.
-
-**Historisch archief**  
-Status voor metadata van datasets of services die niet langer actueel zijn maar omwille van historiek raadpleegbaar blijven.  
 
 
 ## Recordtypes
@@ -74,7 +71,7 @@ Samenhangende reeks datasets die variëren in tijd, versie of geografische afbak
 
 !!! info
 
-   In oudere documentation soms ook 'virtuele catalogus'.
+   In oudere documentatie soms ook 'virtuele catalogus'.
 
 Recordtype dat een verzameling van metadatarecords groepeert. Wordt gebruikt om aanbod thematisch, organisatorisch of functioneel te structureren. Dit is een breder concept dan series en leidt tot een eigen portaal om data van een gelijke bron of thema in de kijker te zetten. Dit is aanbevolen voor alle verzamelingen die niet alleen versies doorheen de tijd of locaties van een zelfde concept weergeven.
 Voorbeelden omvatten verzamelingen van alle beschikbare datasets over historische kaarten, groeperingen per provincie of gemeente etc.  

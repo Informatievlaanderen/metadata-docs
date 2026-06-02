@@ -5,7 +5,9 @@ hide:
   - toc
 ---
 
-# Overzicht applicatieprofielen
+# Overzicht
+
+Hieronder wordt een overzicht gegeven van de profielen in gebruik. De tabel is filterbaar en sorteerbaar voor een vergelijking mogelijk te maken. Maak gebruik van de zoekbox rechtsboven voor een globale filter.
 
 <div class="datatable" markdown>
 

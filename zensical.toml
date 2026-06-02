@@ -64,6 +64,7 @@ nav = [
         ] },
         { "Applicatieprofielen" = [
             "applicatieprofielen/index.md",
+            "applicatieprofielen/apoverview.md",
             "applicatieprofielen/metadatadcat2.md",
             "applicatieprofielen/dcatapvl2.md",
             "applicatieprofielen/dcatapvl3.md",

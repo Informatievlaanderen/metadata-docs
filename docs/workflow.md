@@ -1,3 +1,8 @@
+---
+title: Workflow
+icon: lucide/workflow
+---
+
 # Workflow
 
 Een record krijgt na aanmaak een _workflow status_. Deze kan wijzigen doorheen de tijd, met als uiteindelijk doel _gepubliceerd_ te raken zodat het record zichtbaar wordt voor het publiek. Afhankelijk van de rol die je hebt binnen de applicatie (editor, reviewer, admin) kan je bepaalde aanpassingen aan de status doen. 

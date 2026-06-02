@@ -50,17 +50,21 @@ nav = [
         "snelstarten.md",
         "metadata.md",
         "metadatavlaanderen.md",
+        "glossary.md" ,
     ] },
     { "Handleiding" = [
         { "Editoren" = [
             "editoren.md",
+            "sjablonen.md",
+            "usergroupmanagement.md",
         ] },
         { "Admins" = [
             "admins.md",
-        ] },
+            "harvesting.md",        ] },
         { "Instructies" = [
             "minimale.effort.voor.datavindplaats.md",
             "gdi.best.practice.md",
+            "subcatalogus.md",
         ] },
         { "Applicatieprofielen" = [
             "applicatieprofielen/index.md",
@@ -76,7 +80,7 @@ nav = [
         { "Draag bij" = "draagbij.md" },
         { "Werking" = "werking.md" },
         { "FAQ" = "faq.md" },
-        { "Glossary" = "glossary.md" },
+       
     ] },
 ]
 

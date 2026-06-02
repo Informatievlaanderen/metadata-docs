@@ -1,9 +1,16 @@
 ---
 title: Snel starten
+icon: lucide/play
 ---
 
-# Snel starten
+# Voor de eerste keer data beschrijven 
 
-## Test 1
+In de meeste gevallen ga je inloggen als deel van een groep met een veilige authenticatie (zoals It's Me) en dan kan je een nieuwe record aanmaken met de meest geschikte [sjabloon](sjablonen) voor je doeleind.
 
-## Test 2
+Geef je record een titel en klik op 'Bewaar en sluit' en je ziet de record in een overzicht van records zien staan. Klik nog eens op de titel en je ziet meteen het resultaat (in ontwerp). Je ziet zo ook rechtstreeks welke gegevens automatisch genereerd worden.
+
+Ga terug naar de Editor door op 'Bewerken' te klikken.  Vul de record met de gegevens, die voor je gekozen profiel vereist wordt en raadpleg de [Instructies voor de weergave op Datavindplaats](minimale.effort.voor.datavindplaats) om je record mooi op [Datavindplaats](https://www.Datavindplaats.be) te laten verschijnen.
+
+Als je klaar bent en de validatie geen fouten meer opwerpt kan je de record ter goedkeuring en publicatie indienen. 
+Meer over de publicatie workflow vind je [hier](workflow)
+

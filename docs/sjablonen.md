@@ -1,6 +1,6 @@
 ---
 icon: lucide/form
-title: Subcatalogi aanmaken
+title: Sjablonen kiezen
 ---
 # Welke sjabloon is juist voor mijn data?
 

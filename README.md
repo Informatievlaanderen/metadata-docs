@@ -1,6 +1,6 @@
 # Setup
 
-## Windows
+## Windows 3
 
 Install Zensical in a virtual environment (python). This will probably only be possible for external / developer machines.
 

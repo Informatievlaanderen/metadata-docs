@@ -24,6 +24,10 @@ Aan elk record kunnen meerdere rollen gekoppeld zijn met eigen contactinformatie
 **Hoe duid ik aan dat mijn dataset een Hoogwaardige Dataset (HVD) is?**  
 Datasets die onder de Europese HVD-wetgeving vallen vereisen bijkomende metadata-elementen zoals _wetgeving_ en _HVD categorie_. Beide elementen worden via een thesaurus gekoppeld aan een record. 
 
+## Nieuwe sectie
+Dit is nieuw.
+
+
 ## Licensies en rechten 
 
 **Hoe duid ik aan welke rechten de gebruikers op de omschreven datasets hebben?**

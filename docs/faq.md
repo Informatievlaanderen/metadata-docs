@@ -25,8 +25,8 @@ Aan elk record kunnen meerdere rollen gekoppeld zijn met eigen contactinformatie
 Datasets die onder de Europese HVD-wetgeving vallen vereisen bijkomende metadata-elementen zoals _wetgeving_ en _HVD categorie_. Beide elementen worden via een thesaurus gekoppeld aan een record. 
 
 ## Nieuwe sectie
-Dit is nieuw (door joachim).
-
+Dit is nieuwer.
+Er zijn hier sloebers bezig...
 
 ## Licensies en rechten 
 

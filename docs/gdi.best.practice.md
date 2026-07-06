@@ -292,7 +292,7 @@ Omdat ISO-metadata en DCAT-metadata dezelfde kern aan metadata elementen delen (
 
 ### Nieuwtjes door de nieuwe Metadatacenters (in gebruik genomen op 16 november 2020)
 
-!!! warning "Gedateerde informmatie"
+!!! warning "Gedateerde informatie"
 
     De informatie rond de metadatacenters is partieel gedateerd. Momenteel is er slechts één [Metadata Vlaanderen](https://metadata.vlaanderen.be/), waarin organisaties én Digitaal Vlaanderen zelf hun metadata records beheren. DCAT werd ondertussen geüpdated naar DCAT3 en extra applicatieprofielen. 
 

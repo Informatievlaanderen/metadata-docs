@@ -9,10 +9,4 @@
 - item 1
 - item 2
 
-## Titel 2
-
-Dit is **bold**.
-
-### Titel 3 - whatever
-
-dit is **tekest** lkjsdffsdjlkfds en *test*.
+Dit kan ik nu aanpassen zoals ik wil!

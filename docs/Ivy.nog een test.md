@@ -1,1 +1,0 @@
-Ja, we gaan er bijna aan beginnen

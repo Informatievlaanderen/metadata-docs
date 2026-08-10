@@ -13,6 +13,7 @@ Centrale Vlaamse voorziening voor het beschrijven, beheren en ontsluiten van met
 **Metadatarecord**  
 Een beschrijving van een dataset, dataservice, datasetserie of catalogus, aangemaakt via een sjabloon (ISO of DCAT). Elk record doorloopt een workflow gaande van ontwerp tot publicatie.
 
+
 **Sjabloon (template)**  
 Vooraf gedefinieerde structuur die bepaalt welke metadata-elementen beschikbaar en verplicht zijn (bv. ISO-dataset, DCAT-dataset, dataservice, (sub)catalogus).  zie de FAQ voor een keuze steun.
 
